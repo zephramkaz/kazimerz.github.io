@@ -14,3 +14,5 @@ function openPage(pageName) {
     // Scroll back to the top
     window.scrollTo(0, 0);
 }
+
+

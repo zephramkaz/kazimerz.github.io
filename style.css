@@ -143,7 +143,7 @@ nav {
 .project-info {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 
     gap: 20px;
 }
@@ -151,20 +151,30 @@ nav {
 .card {
     background-color: white;
 
-    padding: 25px;
+    padding: 30px;
 
-    border-radius: 6px;
+    border-radius: 20px;
 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
+    font-size: 22px;
+
     margin-bottom: 10px;
+
+}
+
+.card h4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
 }
 
 .card p {
-    line-height: 1.5;
+    line-height: 1;
 }
+
 
 
 /* -------------------------
