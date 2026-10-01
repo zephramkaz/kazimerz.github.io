@@ -1,64 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ME382: Final Portfolio</title>
-  <meta name="description" content="My GitHub Pages website">
+  <title>Engineering Portfolio</title>
 
+  <!-- Connect CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a class="logo" href="#">ME382: Rube Goldbergy Sub-system</a>
 
-      <div class="nav-links">
-        <a href="#introduction">Introduction</a>
-        <a href="#section1">Section 1</a>
-        <a href="#section2">Section 2</a>
-        <a href="#section3">Section 3</a>
-        <a href="#section4">Section 4</a>
-      </div>
-    </nav>
-  </header>
+  <!-- Navigation Bar -->
+  <nav>
+    <button class="navlink" onclick="openPage('About')">
+      About Me
+    </button>
 
-  <main>
-    <section id="introduction" class="hero">
-      <h1>Introduction</h1>
-      <p>Introduction to the design of my final portfolio ...</p>
-      <a class="button" href="#about">Learn More</a>
-    </section>
+    <button class="navlink" onclick="openPage('Project1')">
+      Course-wide Rube Goldberg
+    </button>
 
-    <section id="section1">
-      <h2>Section 1</h2>
+    <!-- OPTIONAL FOR FUTURE PROJECTS 
+    <button class="navlink" onclick="openPage('Project2')">
+      Project 2
+    </button>
+
+    <button class="navlink" onclick="openPage('Project3')">
+      Project 3
+    </button> -->
+  </nav>
+
+
+  <!-- ==================== -->
+  <!-- ABOUT PAGE -->
+  <!-- ==================== -->
+
+  <section id="About" class="page">
+
+    <div class="about-container">
+
+      <h1>Zephram Kazimer</h1>
+
+      <h2>Oregon State University</h2>
+      <h2>Mechanical Engineering Student</h2>
+
       <p>
-        ... section 1 content ...
+        Welcome to my engineering portfolio. I am a mechanical
+        engineering student interested in mechanical design,
+        manufacturing, prototyping, and engineering analysis.
       </p>
-    </section>
 
-    <section id="section2">
-      <h2>Section 2</h2>
-      <p>... section 2 content ...</p>
-    </section>
+      <p>
+        This portfolio highlights projects that demonstrate
+        my experience with the engineering design process,
+        CAD, analysis, fabrication, testing, and technical
+        problem solving.
+      </p>
 
-    <section id="section3">
-      <h2>Section 3</h2>
-      <p>... section 3 content ...</p>
-    </section>
+      <p>
+        Use the navigation bar above to explore my projects.
+      </p>
 
-    <section id="section4">
-      <h2>Section 4</h2>
-      <p>... section 4 content ...</p>
-    </section>
-  </main>
+    </div>
 
-  <footer>
-    <p>©<span id="year"></span> Zephram Kazimer for Oregon State University</p>
-  </footer>
+  </section>
 
+
+  <!-- ==================== -->
+  <!-- rUBE GOLDBERG PROJECT -->
+  <!-- ==================== -->
+
+  <section id="Project1" class="page">
+
+    <div class="project-container">
+
+      <h1>Rube Goldberg Machine</h1>
+
+      <p class="project-description">
+        This project involved designing and building a
+        mechanical system that completes a simple task
+        through a sequence of interconnected mechanical events.
+      </p>
+
+      <img src="project1.jpg" alt="Rube Goldberg Machine" class="project-image">
+
+      <div class="project-info">
+
+        <div class="card">
+          <h3>Objective</h3>
+
+          <p>
+            Design a reliable multi-stage mechanism capable
+            of transferring energy between several
+            mechanical systems.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Engineering</h3>
+
+          <p>
+            Applied concepts involving energy transfer,
+            forces, motion, prototyping, and mechanical
+            design.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Tools</h3>
+
+          <p>
+            CAD, prototyping, fabrication, testing,
+            and design iteration.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==================== -->
+  <!-- PROJECT 2 -->
+  <!-- ==================== -->
+
+  <section id="Project2" class="page">
+
+    <div class="project-container">
+
+      <h1>Project 2</h1>
+
+      <p class="project-description">
+        Write a short overview of your second engineering
+        project here.
+      </p>
+
+      <img src="project2.jpg" alt="Engineering Project 2" class="project-image">
+
+      <div class="project-info">
+
+        <div class="card">
+          <h3>Problem</h3>
+
+          <p>
+            Describe the engineering problem or design
+            requirement.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Solution</h3>
+
+          <p>
+            Explain your design and the engineering
+            decisions you made.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Results</h3>
+
+          <p>
+            Describe testing results, performance,
+            or lessons learned.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  -->
+
+  <!-- ==================== -->
+  <!-- PROJECT 3 -->
+  <!-- ==================== -->
+
+  <section id="Project3" class="page">
+
+    <div class="project-container">
+
+      <h1>Project 3</h1>
+
+      <p class="project-description">
+        Add a description of your third engineering project here.
+      </p>
+
+      <img src="project3.jpg" alt="Engineering Project 3" class="project-image">
+
+      <div class="project-info">
+
+        <div class="card">
+          <h3>Objective</h3>
+
+          <p>
+            Explain the goal of the project.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>My Role</h3>
+
+          <p>
+            Explain what you personally designed,
+            calculated, fabricated, programmed, or tested.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Skills</h3>
+
+          <p>
+            List relevant skills such as SolidWorks,
+            MATLAB, machining, FEA, electronics,
+            or programming.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Connect JavaScript file -->
   <script src="script.js"></script>
+
 </body>
+
 </html>
