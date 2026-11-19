@@ -1,18 +1,1 @@
-function openPage(pageName) {
-
-    // Find all sections with the class "page"
-    const pages = document.getElementsByClassName("page");
-
-    // Hide every page
-    for (let i = 0; i < pages.length; i++) {
-        pages[i].style.display = "none";
-    }
-
-    // Show the selected page
-    document.getElementById(pageName).style.display = "block";
-
-    // Scroll back to the top
-    window.scrollTo(0, 0);
-}
-
-
+const menuButton=document.querySelector('.menu-toggle');const nav=document.querySelector('#nav-links');menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false')}));document.querySelector('#year').textContent=new Date().getFullYear();const lightbox=document.querySelector('#lightbox');const lightboxImage=lightbox.querySelector('img');document.querySelectorAll('[data-full]').forEach(button=>button.addEventListener('click',()=>{lightboxImage.src=button.dataset.full;lightboxImage.alt=button.querySelector('img').alt;lightbox.showModal()}));lightbox.querySelector('.close-lightbox').addEventListener('click',()=>lightbox.close());lightbox.addEventListener('click',event=>{if(event.target===lightbox)lightbox.close()});

@@ -1,300 +1,736 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+        name="description"
+        content="Engineering portfolio of Zephram Kazimer: mechanical design, CAD, mechatronics, and engineering analysis."
+    >
+    <meta name="theme-color" content="#0b1220">
 
-  <title>Engineering Portfolio</title>
+    <title>Zephram Kazimer | Engineering Portfolio</title>
 
-  <!-- Connect CSS file -->
-  <link rel="stylesheet" href="style.css">
-  
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <button class="navlink" onclick="openPage('About')">
-      About Me
-    </button>
+    <!-- HEADER AND NAVIGATION -->
+    <header class="site-header">
+        <div class="wrap nav">
 
-    <button class="navlink" onclick="openPage('Project1')">
-      Course-wide Rube Goldberg
-    </button>
+            <a class="brand" href="#top">
+                <span class="brand-mark">
+                    ZK<span>.</span>
+                </span>
+                <span class="brand-sub">
+                    ENGINEERING PORTFOLIO
+                </span>
+            </a>
 
-    <!-- OPTIONAL FOR FUTURE PROJECTS 
-    <button class="navlink" onclick="openPage('Project2')">
-      Project 2
-    </button>
+            <button
+                class="menu-toggle"
+                aria-expanded="false"
+                aria-controls="nav-links"
+                aria-label="Toggle navigation"
+            >
+                ☰
+            </button>
 
-    <button class="navlink" onclick="openPage('Project3')">
-      Project 3
-    </button> -->
-  </nav>
+            <nav id="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#analysis">Analysis</a>
+                <a href="#contact">Contact</a>
 
-
-  <!-- ==================== -->
-  <!-- ABOUT PAGE -->
-  <!-- ==================== -->
-
-  <section id="About" class="page">
-
-    <div class="about-container">
-
-      <h1>Zephram Kazimer</h1>
-
-      <h2>Oregon State University</h2>
-      <h2>Mechanical Engineering Student</h2>
-
-      <p>
-        Welcome to my engineering portfolio. I am a mechanical
-        engineering student interested in mechanical design,
-        manufacturing, prototyping, and engineering analysis.
-      </p>
-
-      <p>
-        This portfolio highlights projects that demonstrate
-        my experience with the engineering design process,
-        CAD, analysis, fabrication, testing, and technical
-        problem solving.
-      </p>
-
-      <p>
-        Use the navigation bar above to explore my projects.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- ==================== -->
-  <!-- rUBE GOLDBERG PROJECT -->
-  <!-- ==================== -->
-
-  <section id="Project1" class="page">
-
-    <div class="project-container">
-
-      <h1>Rube Goldberg Machine: Sub-system #X</h1>
-
-      <p class="project-description">
-        This project involved designing a course-wide Rube Goldberg Machine.
-      </p>
-
-      <div class="project-info">
-
-        <!-- ======= Phase 1 =========-->
-        <div class="card">
-          <h3>Phase 1: Presentation and Justification of Rube Goldberg 
-            Sub-system and my Solution</h3>
-
-          <img src="resources/example.png" alt="Rube Goldberg Machine" class="project-image">
-
-          <h4> Presentation & Justification </h4>
-          <p>
-            Presentation and Justification.
-          </p>
-
-          <h4> Documentation and analysis of products with similar function </h4>
-          <p>
-            Other products and analysis.
-          </p>
-
-          <h4> Solutions and it's Design Requirements. </h4>
-          <p>
-            Give solution and it's design requirements.
-          </p>
-          
-        <div>
-
-        <!-- ======= Phase 2 =========-->
-        <div class="card">
-          <h3> Phase 2: Generating and Analyzing Solution </h3>
-
-          <img src="resources/example.png" alt="Rube Goldberg Machine" class="project-image">
-
-          <h4> Design for Functionality </h4>
-          <p>
-            Clarify how design meets functionality requirements.
-          </p>
-
-          <h4> Design concept generation, analysis, and selection </h4>
-          <p>
-            Show concept generation, analysis, and selection.
-          </p>
-
-          <h4> Application of stem principles </h4>
-          <p>
-            How does my analysis abide with my STEM curriculumm?
-          </p>
+                <a
+                    class="nav-cta"
+                    href="assets/ME382-Homework-7.pdf"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    View report ↗
+                </a>
+            </nav>
 
         </div>
+    </header>
 
-        <!-- ======= Phase 3 =========-->
-        <div class="card">
-          <h3> Phase 3: Detailed Design, Prototyping, and Simulation </h3>
 
-          <img src="resources/example.png" alt="Rube Goldberg Machine" class="project-image">
+    <main id="top">
 
-          <h4> Need for Computational Modeling of Concept </h4>
-          <p>
-            What's the need/purpose of computational modeling of concept assembly?
-            What is the plan?
-          </p>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="wrap hero-grid">
 
-          <h4> Simulation Expectations </h4>
-          <p>
-            Communicate expectations of full physics/engineering analysis.
-          </p>
+                <div class="hero-copy">
 
-          <h4> Simulation Results </h4>
-          <p>
-            Simulation/Computational testing and data collection.
-          </p>
+                    <div class="eyebrow">
+                        <span class="live-dot"></span>
+                        MECHANICAL ENGINEERING · DESIGN & ANALYSIS
+                    </div>
+
+                    <h1>
+                        Engineering ideas<br>
+                        into <em>real-world</em><br>
+                        solutions.
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm <strong>Zephram Kazimer</strong>,
+                        an engineering student at Oregon State University.
+                        This portfolio documents my approach to mechanical
+                        design, CAD modeling, mechatronics, and analytical
+                        problem-solving.
+                    </p>
+
+                    <div class="actions">
+
+                        <a class="btn primary" href="#projects">
+                            Explore my work
+                            <span>↗</span>
+                        </a>
+
+                        <a
+                            class="btn ghost"
+                            href="assets/ME382-Homework-7.pdf"
+                            download
+                        >
+                            Download project report ↓
+                        </a>
+
+                    </div>
+
+                    <div class="hero-meta">
+
+                        <div>
+                            <strong>OSU</strong>
+                            <span>Oregon State University</span>
+                        </div>
+
+                        <div>
+                            <strong>ME 382</strong>
+                            <span>Engineering design project</span>
+                        </div>
+
+                        <div>
+                            <strong>2026</strong>
+                            <span>Project documentation</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-visual">
+
+                    <div class="visual-top">
+                        <span>FEATURED CAD ASSEMBLY</span>
+                        <span>FIG. 01 / 07</span>
+                    </div>
+
+                    <img
+                        src="assets/assembly.png"
+                        alt="Three CAD views of the Goldberg mechanical assembly"
+                        fetchpriority="high"
+                    >
+
+                    <div class="visual-bottom">
+                        <span>GOLDBERG ASSEMBLY #22</span>
+                        <span class="visual-cross">⊕</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CORE DISCIPLINES -->
+        <section class="strip">
+            <div class="wrap strip-inner">
+
+                <span>CORE DISCIPLINES</span>
+                <span>01 / Mechanical design</span>
+                <span>02 / CAD & technical drawings</span>
+                <span>03 / Mechatronics</span>
+                <span>04 / Engineering analysis</span>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="section" id="about">
+            <div class="wrap two-col">
+
+                <div>
+
+                    <div class="section-label">
+                        01 — ABOUT
+                    </div>
+
+                    <h2>
+                        Design with<br>
+                        <span class="muted">intent.</span>
+                    </h2>
+
+                </div>
+
+                <div class="about-text">
+
+                    <p>
+                        My engineering work connects conceptual design
+                        to detailed mechanical layouts, calculations,
+                        component selection, and documentation.
+                    </p>
+
+                    <p>
+                        The featured ME 382 project demonstrates a mechanism
+                        developed around a worm-gear motor, mitre gears,
+                        a lead screw, spring loading, and an electronics
+                        subsystem. The work includes assembly drawings,
+                        individual part drawings, and analytical estimates
+                        of force, efficiency, and operating time.
+                    </p>
+
+                    <div class="tags">
+                        <span>Mechanical Design</span>
+                        <span>CAD</span>
+                        <span>Design Analysis</span>
+                        <span>Electromechanical Systems</span>
+                        <span>Technical Documentation</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PROJECTS SECTION -->
+        <section class="section projects" id="projects">
+            <div class="wrap">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <div class="section-label">
+                            02 — SELECTED WORK
+                        </div>
+
+                        <h2>
+                            Featured project<span class="accent">.</span>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        From concept and analysis to fully dimensioned
+                        engineering documentation.
+                    </p>
+
+                </div>
+
+
+                <!-- FEATURED PROJECT -->
+                <article class="project-feature">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/assembly.png"
+                            alt="CAD assembly views showing the geared mechanical system"
+                            loading="lazy"
+                        >
+
+                        <span class="image-caption">
+                            01 / ASSEMBLY OVERVIEW
+                        </span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <div class="project-index">
+                            PROJECT 001 <span>·</span> ME 382 / 2026
+                        </div>
+
+                        <h3>Goldberg Assembly #22</h3>
+
+                        <p>
+                            A mechanical and mechatronic assembly using
+                            a micro worm-gear motor, paired mitre gears,
+                            and a threaded mechanism to compress a spring
+                            and produce a controlled output force.
+                        </p>
+
+                        <div class="project-specs">
+
+                            <div>
+                                <small>FOCUS</small>
+                                <strong>
+                                    Mechanical design & analysis
+                                </strong>
+                            </div>
+
+                            <div>
+                                <small>DOCUMENTATION</small>
+                                <strong>
+                                    41-page design report
+                                </strong>
+                            </div>
+
+                            <div>
+                                <small>PLATFORM</small>
+                                <strong>
+                                    Arduino-based control concept
+                                </strong>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="text-link"
+                            href="assets/ME382-Homework-7.pdf"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Open complete engineering report
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT GALLERY -->
+                <div class="gallery-head">
+
+                    <h3>Design documentation</h3>
+
+                    <span>
+                        SELECTED VIEWS FROM THE REPORT
+                    </span>
+
+                </div>
+
+                <div class="gallery">
+
+                    <button
+                        class="gallery-card"
+                        data-full="assets/assembly-details.png"
+                        aria-label="Expand assembly details"
+                    >
+                        <img
+                            src="assets/assembly-details.png"
+                            alt="Assembly sectional views and callouts"
+                            loading="lazy"
+                        >
+                        <span>
+                            Assembly details
+                            <b>↗</b>
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="gallery-card"
+                        data-full="assets/main-block.png"
+                        aria-label="Expand main block CAD"
+                    >
+                        <img
+                            src="assets/main-block.png"
+                            alt="Main block isometric CAD drawing"
+                            loading="lazy"
+                        >
+                        <span>
+                            Main block design
+                            <b>↗</b>
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="gallery-card"
+                        data-full="assets/gear-one.png"
+                        aria-label="Expand mitre gear one"
+                    >
+                        <img
+                            src="assets/gear-one.png"
+                            alt="Mitre gear one CAD drawing"
+                            loading="lazy"
+                        >
+                        <span>
+                            Mitre gear 01
+                            <b>↗</b>
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="gallery-card"
+                        data-full="assets/gear-two.png"
+                        aria-label="Expand mitre gear two"
+                    >
+                        <img
+                            src="assets/gear-two.png"
+                            alt="Mitre gear two with threaded shaft CAD drawing"
+                            loading="lazy"
+                        >
+                        <span>
+                            Mitre gear 02
+                            <b>↗</b>
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="gallery-card"
+                        data-full="assets/dimensions.png"
+                        aria-label="Expand dimensioned assembly"
+                    >
+                        <img
+                            src="assets/dimensions.png"
+                            alt="Dimensioned assembly technical drawing"
+                            loading="lazy"
+                        >
+                        <span>
+                            Assembly dimensions
+                            <b>↗</b>
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="gallery-card"
+                        data-full="assets/electronics.png"
+                        aria-label="Expand mechatronic diagram"
+                    >
+                        <img
+                            src="assets/electronics.png"
+                            alt="Mechatronic diagram showing power module, Arduino, motor driver, and motors"
+                            loading="lazy"
+                        >
+                        <span>
+                            Mechatronic architecture
+                            <b>↗</b>
+                        </span>
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ENGINEERING ANALYSIS -->
+        <section class="section analysis" id="analysis">
+            <div class="wrap">
+
+                <div class="section-label">
+                    03 — ENGINEERING ANALYSIS
+                </div>
+
+                <div class="section-heading analysis-heading">
+
+                    <h2>
+                        Numbers behind<br>
+                        the design<span class="accent">.</span>
+                    </h2>
+
+                    <p>
+                        Analytical estimates reported in the ME 382
+                        Homework 7 design analysis; not experimental
+                        validation.
+                    </p>
+
+                </div>
+
+
+                <!-- ANALYSIS METRICS -->
+                <div class="metrics">
+
+                    <div class="metric">
+
+                        <span>
+                            01 / SPRING DISPLACEMENT
+                        </span>
+
+                        <strong>
+                            1.889<small> mm</small>
+                        </strong>
+
+                        <p>
+                            Calculated displacement for approximately
+                            4 N of output force.
+                        </p>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <span>
+                            02 / SCREW ROTATION
+                        </span>
+
+                        <strong>
+                            340.2<small>°</small>
+                        </strong>
+
+                        <p>
+                            Calculated rotation corresponding to
+                            the nominal displacement.
+                        </p>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <span>
+                            03 / GEAR EFFICIENCY
+                        </span>
+
+                        <strong>
+                            97.3<small>%</small>
+                        </strong>
+
+                        <p>
+                            Simplified estimate; the report notes actual
+                            efficiency may be closer to 65–85%.
+                        </p>
+
+                    </div>
+
+
+                    <div class="metric">
+
+                        <span>
+                            04 / MOTOR RUNTIME
+                        </span>
+
+                        <strong>
+                            6.2<small> s</small>
+                        </strong>
+
+                        <p>
+                            Approximate activation time based on
+                            the assumed gear efficiency.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ANALYSIS NOTE -->
+                <div class="analysis-note">
+
+                    <div>
+
+                        <span class="note-label">
+                            DESIGN CONSIDERATION
+                        </span>
+
+                        <h3>
+                            Accounting for uncertainty
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        The report also evaluates a more conservative
+                        1.5-turn screw rotation, corresponding to
+                        approximately 3 mm of spring displacement
+                        and 6.4 N of output force. The torque and
+                        timing models are preliminary approximations,
+                        particularly around threaded contact and friction.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ENGINEERING WORKFLOW -->
+        <section class="section process">
+            <div class="wrap">
+
+                <div class="section-label">
+                    04 — WORKFLOW
+                </div>
+
+                <h2>
+                    From model to<br>
+                    <span class="muted">mechanism.</span>
+                </h2>
+
+                <div class="steps">
+
+                    <div>
+
+                        <span>01</span>
+
+                        <h3>
+                            Concept & architecture
+                        </h3>
+
+                        <p>
+                            Define mechanical actuation and outline
+                            the electronics subsystem.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>02</span>
+
+                        <h3>
+                            CAD & detailing
+                        </h3>
+
+                        <p>
+                            Model assemblies, define interfaces,
+                            and produce dimensioned component drawings.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>03</span>
+
+                        <h3>
+                            Analytical verification
+                        </h3>
+
+                        <p>
+                            Estimate force, displacement, torque losses,
+                            and operating time.
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>04</span>
+
+                        <h3>
+                            Documentation
+                        </h3>
+
+                        <p>
+                            Compile technical drawings, a bill of
+                            materials, and design assumptions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact" id="contact">
+            <div class="wrap contact-inner">
+
+                <div>
+
+                    <div class="section-label">
+                        05 — CONNECT
+                    </div>
+
+                    <h2>
+                        Let's build<br>
+                        what's next<span class="accent">.</span>
+                    </h2>
+
+                    <p>
+                        Interested in my engineering work?
+                        Explore the full design report or connect
+                        using the contact links below once configured.
+                    </p>
+
+                </div>
+
+                <div class="contact-actions">
+
+                    <a
+                        class="btn primary"
+                        href="assets/ME382-Homework-7.pdf"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        View full project report ↗
+                    </a>
+
+                    <p class="contact-hint">
+                        To add your email, LinkedIn, and GitHub profile,
+                        edit the contact section in
+                        <code>index.html</code>.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="wrap footer-inner">
+
+            <span>
+                © <span id="year">2026</span> Zephram Kazimer
+            </span>
+
+            <span>
+                DESIGNED FOR GITHUB PAGES · BUILT WITH HTML / CSS / JS
+            </span>
+
+            <a href="#top">
+                BACK TO TOP ↑
+            </a>
 
         </div>
-
-        <!-- ======= Phase 4 =========-->
-        <div class="card">
-          <h3> Phase 4: Evaluation, Reflection and Recommendations </h3>
-
-          <img src="resources/example.png" alt="Rube Goldberg Machine" class="project-image">
-
-          <h4> Documentation of External Evaluation </h4>
-          <p>
-            How my peers evaluated my design.
-          </p>
-
-          <h4> Reflection </h4>
-          <p>
-            Personal and peer feedback based reflection.
-          </p>
-
-          <h4> Recommendations </h4>
-          <p>
-            Present of recommendations for future designs.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
+    </footer>
 
 
-  <!-- ==================== -->
-  <!-- PROJECT 2 -->
-  <!-- ==================== -->
+    <!-- IMAGE LIGHTBOX -->
+    <dialog
+        id="lightbox"
+        aria-label="Expanded engineering drawing"
+    >
+        <button
+            class="close-lightbox"
+            aria-label="Close image"
+        >
+            ×
+        </button>
 
-  <section id="Project2" class="page">
-
-    <div class="project-container">
-
-      <h1>Project 2</h1>
-
-      <p class="project-description">
-        Write a short overview of your second engineering
-        project here.
-      </p>
-
-      <img src="project2.jpg" alt="Engineering Project 2" class="project-image">
-
-      <div class="project-info">
-
-        <div class="card">
-          <h3>Problem</h3>
-
-          <p>
-            Describe the engineering problem or design
-            requirement.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Solution</h3>
-
-          <p>
-            Explain your design and the engineering
-            decisions you made.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Results</h3>
-
-          <p>
-            Describe testing results, performance,
-            or lessons learned.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-  -->
-
-  <!-- ==================== -->
-  <!-- PROJECT 3 -->
-  <!-- ==================== -->
-
-  <section id="Project3" class="page">
-
-    <div class="project-container">
-
-      <h1>Project 3</h1>
-
-      <p class="project-description">
-        Add a description of your third engineering project here.
-      </p>
-
-      <img src="project3.jpg" alt="Engineering Project 3" class="project-image">
-
-      <div class="project-info">
-
-        <div class="card">
-          <h3>Objective</h3>
-
-          <p>
-            Explain the goal of the project.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>My Role</h3>
-
-          <p>
-            Explain what you personally designed,
-            calculated, fabricated, programmed, or tested.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Skills</h3>
-
-          <p>
-            List relevant skills such as SolidWorks,
-            MATLAB, machining, FEA, electronics,
-            or programming.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
+        <img alt="Expanded engineering drawing">
+    </dialog>
 
 
-  <!-- Connect JavaScript file -->
-  <script src="script.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
-
 </html>
+
