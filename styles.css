@@ -51,8 +51,10 @@ button {
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  height: auto;
 }
 
 .wrap {
@@ -441,8 +443,32 @@ h3 {
     object-fit: contain;
 }
 
+/* for image to left and text to right*/
+
+.paragraph-box {
+    margin: 46px;
+
+}
+
+.container {
+    margin-left: 50px;
+    display: flex;
+    align-items: center; /* Vertically centers text relative to the image */
+    gap: 16px;           /* Adds space between the image and text */
+}
+
+
+.card {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centers both image and text */
+    text-align: center;  /* Ensures multi-line text stays centered */
+}
+
 .image-caption {
-    position: absolute;
+
+    position: center;
     bottom: 12px;
     left: 22px;
     color: #315C43;
@@ -685,42 +711,6 @@ h3 {
     font-size: 13px;
     color: #527260;
     line-height: 1.8;
-}
-
-
-/* ========================================
-   CONTACT SECTION
-======================================== */
-
-.contact {
-    padding: 100px 0;
-    background: linear-gradient(
-        125deg,
-        #D7E9DA,
-        #EDF6EE
-    );
-}
-
-.contact-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 45px;
-}
-
-.contact p {
-    color: #486758;
-    line-height: 1.7;
-    max-width: 500px;
-}
-
-.contact-actions {
-    max-width: 270px;
-}
-
-.contact-hint {
-    font-size: 11px !important;
-    color: #607D69 !important;
 }
 
 
