@@ -1,15 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
-/* ========================================
-   GOOGLE FONTS
-======================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-
-
-/* ========================================
-   ROOT VARIABLES - SOFT GREEN & WHITE
-======================================== */
-
+/* Theme variables */
 :root {
     --bg: #F3F8F3;
     --panel: #DAE9DD;
@@ -17,14 +8,9 @@
     --muted: #567265;
     --line: #BDD3C2;
     --accent: #248A59;
-    --white: #FFFFFF;
 }
 
-
-/* ========================================
-   GLOBAL STYLES
-======================================== */
-
+/* Global styles */
 * {
     box-sizing: border-box;
 }
@@ -37,7 +23,7 @@ body {
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -51,10 +37,10 @@ button {
 }
 
 img {
-  display: block;
-  margin: 0 auto;
-  max-width: 80%;
-  height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
 }
 
 .wrap {
@@ -62,11 +48,7 @@ img {
     margin: auto;
 }
 
-
-/* ========================================
-   HEADER AND NAVIGATION
-======================================== */
-
+/* Header and navigation */
 .site-header {
     position: sticky;
     top: 0;
@@ -91,7 +73,7 @@ img {
 }
 
 .brand-mark {
-    font: 700 28px 'Space Grotesk', sans-serif;
+    font: 700 28px "Space Grotesk", sans-serif;
     letter-spacing: -2px;
 }
 
@@ -119,8 +101,7 @@ img {
     color: #365B48;
 }
 
-.nav nav a:hover,
-.text-link:hover {
+.nav nav a:hover {
     color: var(--accent);
 }
 
@@ -139,13 +120,9 @@ img {
     font-size: 26px;
 }
 
-
-/* ========================================
-   HERO SECTION
-======================================== */
-
+/* Hero section */
 .hero {
-    padding: 98px 0 105px;
+    padding: 98px 0 40px;
     background: radial-gradient(
         circle at 75% 38%,
         #D9EBDD 0%,
@@ -156,45 +133,19 @@ img {
 .hero-grid {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
-    gap: 65px;
+    gap: 50px;
     align-items: center;
 }
 
-.eyebrow,
-.section-label,
-.project-index,
-.note-label {
+.section-label {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--accent);
 }
 
-.live-dot {
-    display: inline-block;
-    background: var(--accent);
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    margin-right: 8px;
-}
-
-.hero h1,
-h2,
-h3 {
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.hero h1 {
-    font-size: clamp(48px, 5.4vw, 77px);
-    line-height: 1.06;
-    letter-spacing: -4px;
-    margin: 30px 0;
-}
-
-.hero h1 em {
-    font-style: normal;
-    color: var(--accent);
+h2 {
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .hero-description {
@@ -215,11 +166,7 @@ h3 {
     margin: 33px 0 55px;
 }
 
-
-/* ========================================
-   BUTTONS
-======================================== */
-
+/* Buttons */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -236,168 +183,24 @@ h3 {
     transform: translateY(-3px);
 }
 
-.btn.primary {
-    background: var(--accent);
-    color: var(--white);
-}
-
 .btn.ghost {
     border: 1px solid #86AE94;
     color: var(--ink);
 }
 
-
-/* ========================================
-   HERO METADATA
-======================================== */
-
-.hero-meta {
-    display: flex;
-    gap: 32px;
-    border-top: 1px solid var(--line);
-    padding-top: 25px;
-}
-
-.hero-meta div {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.hero-meta strong {
-    font: 700 19px 'Space Grotesk';
-}
-
-.hero-meta span {
-    color: var(--muted);
-    font-size: 11px;
-}
-
-
-/* ========================================
-   HERO VISUAL
-======================================== */
-
-.hero-visual {
-    background: #E4F0E6;
-    border: 1px solid #AACAB3;
-    padding: 15px;
-    box-shadow: 25px 25px 0 #D1E4D5;
-}
-
-.visual-top,
-.visual-bottom {
-    display: flex;
-    justify-content: space-between;
-    font-size: 10px;
-    letter-spacing: 1.8px;
-    color: #476B56;
-    padding: 9px 5px 15px;
-}
-
-.visual-bottom {
-    padding: 16px 5px 3px;
-}
-
-.visual-cross {
-    font-size: 16px;
-    color: var(--accent);
-}
-
-.hero-visual img {
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    background: #FFFFFF;
-}
-
-
-/* ========================================
-   CORE DISCIPLINES STRIP
-======================================== */
-
-.strip {
-    border-block: 1px solid var(--line);
-    background: #E5F0E7;
-}
-
-.strip-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 18px;
-    padding: 23px 0;
-    font-size: 11px;
-    color: #456A55;
-}
-
-.strip-inner span:first-child {
-    color: var(--accent);
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
-
-
-/* ========================================
-   GENERAL SECTIONS
-======================================== */
-
+/* General sections */
 .section {
     padding: 115px 0;
 }
 
-.two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-}
-
-.section h2,
-.contact h2 {
+.section h2 {
     font-size: clamp(42px, 5vw, 66px);
     line-height: 1.12;
     letter-spacing: -2.5px;
     margin: 22px 0 0;
 }
 
-.muted {
-    color: #739280;
-}
-
-
-/* ========================================
-   ABOUT SECTION
-======================================== */
-
-.about-text {
-    padding-top: 38px;
-}
-
-.about-text p {
-    color: #486758;
-    line-height: 1.95;
-    font-size: 16px;
-    margin: 0 0 20px;
-}
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-    margin-top: 28px;
-}
-
-.tags span {
-    border: 1px solid var(--line);
-    color: #3C624C;
-    padding: 9px 12px;
-    font-size: 11px;
-}
-
-
-/* ========================================
-   PROJECTS SECTION
-======================================== */
-
+/* Project layout */
 .projects {
     background: var(--panel);
 }
@@ -417,53 +220,24 @@ h3 {
     font-size: 14px;
 }
 
-
-/* ========================================
-   FEATURED PROJECT
-======================================== */
-
-.project-feature {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    border: 1px solid #B0CDB7;
-    background: #FFFFFF;
-}
-
-.project-image {
-    position: relative;
-    background: #EDF5EF;
-    padding: 26px;
-    display: flex;
-    align-items: center;
-}
-
-.project-image img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-}
-
-/* for image to left and text to right*/
-
+/* Content and media */
 .paragraph-box {
     margin: 46px;
-
 }
 
 .container {
     margin-left: 50px;
     display: flex;
-    align-items: center; /* Vertically centers text relative to the image */
-    gap: 16px;           /* Adds space between the image and text */
+    align-items: center;
+    gap: 16px;
 }
-
 
 .card {
     margin: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Horizontally centers both image and text */
-    text-align: center;  /* Ensures multi-line text stays centered */
+    align-items: center;
+    text-align: center;
 }
 
 .video-wrapper {
@@ -478,7 +252,8 @@ h3 {
 
 .video-wrapper video {
     width: 100%;
-    height: auto;
+    max-width: 800px;
+    height: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -486,38 +261,11 @@ h3 {
 .caption {
     margin-top: 18px;
     font-size: 18px;
-
-}
-
-
-
-.image-caption {
-
-    position: center;
-    bottom: 12px;
-    left: 22px;
-    color: #315C43;
-    background: #FFFFFFE8;
-    padding: 7px 10px;
-    font-size: 10px;
-    letter-spacing: 1px;
 }
 
 .project-content {
     padding: 55px 50px;
     justify-content: center;
-}
-
-.project-index span {
-    padding: 0 7px;
-    color: #7C9E88;
-}
-
-.project-content h3 {
-    font-size: 39px;
-    line-height: 1.15;
-    letter-spacing: -1.5px;
-    margin: 22px 0;
 }
 
 .project-content > p {
@@ -526,224 +274,12 @@ h3 {
     font-size: 15px;
 }
 
-
-/* ========================================
-   PROJECT SPECIFICATIONS
-======================================== */
-
-.project-specs {
-    border-top: 1px solid var(--line);
-    margin: 28px 0;
-    padding-top: 18px;
-    display: grid;
-    gap: 19px;
-}
-
-.project-specs div {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.project-specs small {
-    font-size: 10px;
-    color: #658270;
-    letter-spacing: 1.5px;
-}
-
-.project-specs strong {
-    font-size: 13px;
-    font-weight: 500;
-}
-
-.text-link {
-    display: inline-block;
-    color: var(--accent);
-    font-weight: 700;
-    font-size: 13px;
-    border-bottom: 1px solid var(--accent);
-    padding-bottom: 7px;
-    margin-top: 7px;
-}
-
-
-/* ========================================
-   PROJECT GALLERY
-======================================== */
-
-.gallery-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 65px 0 24px;
-}
-
-.gallery-head h3 {
-    font-size: 25px;
-    margin: 0;
-}
-
-.gallery-head > span {
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    color: #527260;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.gallery-card {
-    background: #FFFFFF;
-    border: 1px solid #B2CDB9;
-    padding: 10px;
-    text-align: left;
-    color: var(--ink);
-    cursor: pointer;
-    transition: transform .2s, border-color .2s;
-}
-
-.gallery-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--accent);
-}
-
-.gallery-card img {
-    width: 100%;
-    aspect-ratio: 1.22;
-    object-fit: contain;
-    background: #F5F8F5;
-}
-
-.gallery-card span {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 7px 6px;
-    font-size: 13px;
-}
-
-.gallery-card b {
-    color: var(--accent);
-}
-
-
-/* ========================================
-   ENGINEERING ANALYSIS
-======================================== */
-
+/* Analysis section */
 .analysis-heading {
     margin-bottom: 18px;
 }
 
-.metrics {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
-}
-
-.metric {
-    background: #FFFFFF;
-    padding: 33px 25px;
-    min-height: 245px;
-}
-
-.metric > span {
-    font-size: 10px;
-    letter-spacing: 1.3px;
-    color: var(--accent);
-}
-
-.metric strong {
-    display: block;
-    font: 700 clamp(33px, 3.2vw, 51px) 'Space Grotesk';
-    letter-spacing: -2px;
-    margin: 25px 0 12px;
-}
-
-.metric strong small {
-    font-size: 18px;
-    letter-spacing: 0;
-}
-
-.metric p {
-    color: #527260;
-    font-size: 12px;
-    line-height: 1.75;
-}
-
-
-/* ========================================
-   ANALYSIS NOTE
-======================================== */
-
-.analysis-note {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 40px;
-    border-left: 3px solid var(--accent);
-    background: #E2EFE5;
-    padding: 30px 35px;
-    margin-top: 28px;
-}
-
-.analysis-note h3 {
-    font-size: 24px;
-    margin: 12px 0 0;
-}
-
-.analysis-note p {
-    color: #486758;
-    line-height: 1.8;
-    margin: 0;
-    font-size: 14px;
-}
-
-
-/* ========================================
-   ENGINEERING WORKFLOW
-======================================== */
-
-.process {
-    background: #E8F2EA;
-}
-
-.steps {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    margin-top: 55px;
-}
-
-.steps > div {
-    border-top: 1px solid #94B49C;
-    padding-top: 20px;
-}
-
-.steps span {
-    color: var(--accent);
-    font: 700 15px 'Space Grotesk';
-}
-
-.steps h3 {
-    font-size: 19px;
-    margin: 27px 0 10px;
-}
-
-.steps p {
-    font-size: 13px;
-    color: #527260;
-    line-height: 1.8;
-}
-
-
-/* ========================================
-   FOOTER
-======================================== */
-
+/* Footer */
 footer {
     border-top: 1px solid var(--line);
     background: #F3F8F3;
@@ -763,11 +299,7 @@ footer a {
     color: var(--accent);
 }
 
-
-/* ========================================
-   IMAGE LIGHTBOX
-======================================== */
-
+/* Image lightbox */
 dialog {
     width: min(92vw, 1050px);
     max-height: 92vh;
@@ -798,49 +330,19 @@ dialog img {
     cursor: pointer;
 }
 
-
-/* ========================================
-   RESPONSIVE DESIGN - TABLETS
-   Screens 950px and smaller
-======================================== */
-
+/* Tablet layout */
 @media (max-width: 950px) {
-
     .hero-grid {
         gap: 30px;
-    }
-
-    .hero h1 {
-        font-size: 52px;
     }
 
     .project-content {
         padding: 30px;
     }
-
-    .metrics,
-    .steps {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .strip-inner {
-        flex-wrap: wrap;
-    }
-
-    .two-col {
-        gap: 35px;
-    }
-
 }
 
-
-/* ========================================
-   RESPONSIVE DESIGN - MOBILE
-   Screens 700px and smaller
-======================================== */
-
+/* Mobile layout */
 @media (max-width: 700px) {
-
     .wrap {
         width: min(100% - 36px, 1160px);
     }
@@ -879,33 +381,15 @@ dialog img {
         padding: 65px 0;
     }
 
-    .hero-grid,
-    .two-col,
-    .project-feature,
-    .analysis-note {
+    .hero-grid {
         grid-template-columns: 1fr;
-    }
-
-    .hero h1 {
-        font-size: clamp(43px, 11vw, 64px);
-        letter-spacing: -2.5px;
-    }
-
-    .hero-visual {
-        box-shadow: 10px 10px 0 #D1E4D5;
-    }
-
-    .hero-meta {
-        gap: 15px;
-        flex-wrap: wrap;
     }
 
     .section {
         padding: 72px 0;
     }
 
-    .section-heading,
-    .contact-inner {
+    .section-heading {
         display: block;
     }
 
@@ -913,83 +397,14 @@ dialog img {
         max-width: 100%;
     }
 
-    .about-text {
-        padding-top: 5px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    .gallery-head > span {
-        display: none;
-    }
-
-    .project-image {
-        padding: 12px;
-    }
-
-    .project-content h3 {
-        font-size: 32px;
-    }
-
-    .metric {
-        min-height: 210px;
-        padding: 25px 16px;
-    }
-
-    .metric strong {
-        font-size: 34px;
-    }
-
-    .steps {
-        gap: 20px;
-    }
-
-    .contact {
-        padding: 75px 0;
-    }
-
-    .contact-actions {
-        margin-top: 30px;
-    }
-
     .footer-inner {
         flex-wrap: wrap;
         line-height: 1.6;
     }
-
-    .strip-inner span:first-child {
-        width: 100%;
-    }
-
 }
 
-
-/* ========================================
-   RESPONSIVE DESIGN - SMALL PHONES
-   Screens 430px and smaller
-======================================== */
-
+/* Small phones */
 @media (max-width: 430px) {
-
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .metrics {
-        grid-template-columns: 1fr;
-    }
-
-    .metric {
-        min-height: unset;
-    }
-
-    .steps {
-        grid-template-columns: 1fr;
-    }
-
     .actions {
         flex-direction: column;
     }
@@ -997,6 +412,4 @@ dialog img {
     .btn {
         justify-content: center;
     }
-
 }
-
