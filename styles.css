@@ -8,6 +8,7 @@
     --muted: #567265;
     --line: #BDD3C2;
     --accent: #248A59;
+    --ink2: color: #527260;
 }
 
 /* Global styles */
@@ -138,7 +139,7 @@ img {
 }
 
 .section-label {
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--accent);
@@ -205,28 +206,35 @@ h2 {
     background: var(--panel);
 }
 
+.projects2 {
+    background: var(--bg);
+}
+
 .section-heading {
     display: flex;
     justify-content: space-between;
     align-items: end;
+    margin-top: 35px;
+    margin-bottom: 35px;
     gap: 30px;
-    margin-bottom: 45px;
 }
 
 .section-heading p {
-    color: #527260;
+    color: var(--ink);
     line-height: 1.7;
     max-width: 320px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Content and media */
 .paragraph-box {
     margin: 46px;
+    font-size: 16px;
+
 }
 
 .container {
-    margin-left: 50px;
+    margin-left: 30px;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -244,7 +252,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     padding: 10px 0;
     width: 100%;
@@ -252,15 +260,19 @@ h2 {
 
 .video-wrapper video {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     height: 100%;
     display: block;
     margin: 0 auto;
 }
 
 .caption {
-    margin-top: 18px;
-    font-size: 18px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #527260;
+    line-height: 1.7;
+    max-width: 600px;
+
 }
 
 .project-content {
