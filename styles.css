@@ -149,6 +149,128 @@ h2 {
     font-family: "Space Grotesk", sans-serif;
 }
 
+h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+}
+
+/* STAKEHOLDER ANALYSIS TABLE */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 25px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.stakeholder-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    background-color: #f4f8f4;
+    color: #173b35;
+}
+
+/* COLUMN HEADINGS */
+
+.stakeholder-table thead th {
+    background-color: #173b35;
+    color: #ffffff;
+    padding: 14px 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* TABLE CELLS */
+
+.stakeholder-table td,
+.stakeholder-table th {
+    border: 1px solid #b5c9bd;
+    padding: 12px;
+    vertical-align: middle;
+}
+
+/* STAKEHOLDER COLUMN */
+
+.stakeholder-table td:first-child[rowspan] {
+    background-color: #e0ebe2;
+    font-weight: 600;
+}
+
+/* STAKEHOLDER TIER HEADINGS */
+
+.stakeholder-table .tier-heading th {
+    background-color: #a9c5b1;
+    color: #173b35;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* NUMERICAL VALUES */
+
+.stakeholder-table td:nth-last-child(-n+5) {
+    text-align: center;
+}
+
+/* TARGET VALUES */
+
+.stakeholder-table td:nth-last-child(2) {
+    background-color: #d5e7d8;
+    font-weight: 700;
+}
+
+/* ALTERNATING ROW COLORS */
+
+.stakeholder-table tbody tr:nth-child(even) {
+    background-color: #eaf1eb;
+}
+
+/* ROW HOVER EFFECT */
+
+.stakeholder-table tbody tr:not(.tier-heading):hover {
+    background-color: #dce9df;
+}
+
+/* NON-QUANTIFIABLE REQUIREMENTS */
+
+.stakeholder-table .not-applicable {
+    text-align: center;
+    font-style: italic;
+    color: #64766b;
+    background-color: #eef3ee;
+}
+
+/* TABLE CAPTION */
+
+.table-caption {
+    text-align: center;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #435e50;
+    margin-top: 15px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .stakeholder-table {
+        font-size: 0.8rem;
+    }
+
+    .stakeholder-table td,
+    .stakeholder-table th {
+        padding: 8px;
+    }
+
+}
+
 .hero-description {
     font-size: 16px;
     line-height: 1.85;
@@ -226,9 +348,144 @@ h2 {
     font-size: 16px;
 }
 
+
+/* BENCHMARKING TABLE */
+
+.benchmark-table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    background-color: #f4f8f4;
+    color: #173b35;
+    table-layout: fixed;
+}
+
+/* COLUMN HEADINGS */
+
+.benchmark-table thead th {
+    background-color: #173b35;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* COLUMN WIDTHS */
+
+.benchmark-table thead th:first-child {
+    width: 18%;
+}
+
+.benchmark-table thead th:not(:first-child) {
+    width: 27.33%;
+}
+
+/* TABLE CELLS */
+
+.benchmark-table th,
+.benchmark-table td {
+    border: 1px solid #b5c9bd;
+    padding: 16px;
+    vertical-align: top;
+    overflow-wrap: break-word;
+}
+
+/* EVALUATION CRITERIA */
+
+.benchmark-table tbody th {
+    background-color: #e0ebe2;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* ALTERNATING ROW COLORS */
+
+.benchmark-table tbody tr:nth-child(even) {
+    background-color: #eaf1eb;
+}
+
+/* SECTION HEADINGS */
+
+.benchmark-table .benchmark-heading th {
+    background-color: #a9c5b1;
+    color: #173b35;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* DESIGN IMPLICATIONS */
+
+.benchmark-table .design-implications td {
+    background-color: #d5e7d8;
+}
+
+/* LIST FORMATTING */
+
+.benchmark-table ul {
+    padding-left: 20px;
+    margin: 8px 0;
+}
+
+.benchmark-table li {
+    margin-bottom: 5px;
+}
+
+/* PARAGRAPH FORMATTING */
+
+.benchmark-table p {
+    margin: 10px 0;
+}
+
+/* PRODUCT LINKS */
+
+.benchmark-table a {
+    color: #245e4b;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.benchmark-table a:hover {
+    color: #173b35;
+}
+
+/* HORIZONTAL DIVIDERS */
+
+.benchmark-table hr {
+    border: none;
+    border-top: 1px solid #b5c9bd;
+    margin: 20px 0;
+}
+
+/* ROW HOVER */
+
+.benchmark-table tbody tr:not(.benchmark-heading):hover td {
+    background-color: #dce9df;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .benchmark-table {
+        font-size: 0.8rem;
+    }
+
+    .benchmark-table th,
+    .benchmark-table td {
+        padding: 10px;
+    }
+
+}
+
+
+
 /* Content and media */
 .paragraph-box {
-    margin: 46px;
+    margin: 28px;
     font-size: 16px;
 
 }
@@ -274,6 +531,8 @@ h2 {
     max-width: 600px;
 
 }
+
+
 
 .project-content {
     padding: 55px 50px;
@@ -341,6 +600,131 @@ dialog img {
     font-size: 30px;
     cursor: pointer;
 }
+
+
+/* PUGH DECISION MATRIX */
+
+.pugh-table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    background-color: #f4f8f4;
+    color: #173b35;
+}
+
+/* COLUMN HEADINGS */
+
+.pugh-table thead th {
+    background-color: #173b35;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+/* TABLE CELLS */
+
+.pugh-table th,
+.pugh-table td {
+    border: 1px solid #b5c9bd;
+    padding: 10px;
+}
+
+/* DESIGN OBJECTIVES */
+
+.pugh-table tbody th {
+    background-color: #c5ddbb;
+    text-align: left;
+    font-weight: 600;
+    min-width: 220px;
+}
+
+/* NUMERICAL SCORES */
+
+.pugh-table td {
+    text-align: center;
+    vertical-align: middle;
+    font-variant-numeric: tabular-nums;
+    background-color: #deebd8;
+}
+
+/* DATUM COLUMN */
+
+.pugh-table .datum {
+    background-color: #cccccc;
+    color: #333333;
+}
+
+/* HIGHLIGHTED DESIGN STRENGTHS */
+
+.pugh-table .highlight {
+    background-color: #f7c9ab;
+    font-weight: 600;
+}
+
+/* CRITICAL DESIGN SHORTCOMINGS */
+
+.pugh-table .critical {
+    background-color: #ffc5cc;
+    color: #842029;
+    font-weight: 600;
+}
+
+/* TOTALS */
+
+.pugh-table tfoot th,
+.pugh-table tfoot td {
+    background-color: #a9c5b1;
+    font-weight: 700;
+    border-top: 2px solid #173b35;
+}
+
+/* WEIGHTED TOTALS */
+
+.pugh-table .weighted-total th,
+.pugh-table .weighted-total td {
+    background-color: #c5ddbb;
+    font-size: 1rem;
+}
+
+/* POSITIVE WEIGHTED TOTALS */
+
+.pugh-table .weighted-total .positive {
+    background-color: #c2ebd0;
+    color: #146c43;
+}
+
+/* PRESERVE DATUM COLOR IN TOTALS */
+
+.pugh-table tfoot .datum {
+    background-color: #cccccc;
+}
+
+/* SCORING LEGEND */
+
+.matrix-legend {
+    text-align: center;
+    font-size: 0.85rem;
+    margin: 15px 0;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .pugh-table {
+        font-size: 0.75rem;
+    }
+
+    .pugh-table th,
+    .pugh-table td {
+        padding: 8px;
+    }
+
+}
+
 
 /* Tablet layout */
 @media (max-width: 950px) {

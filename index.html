@@ -29,10 +29,7 @@
                 </span>
             </a>
 
-            <button class="menu-toggle"
-                aria-expanded="false"
-                aria-controls="nav-links"
-                aria-label="Toggle navigation">
+            <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
                 ☰
             </button>
 
@@ -43,10 +40,7 @@
                 <a href="#PHASE-3">PHASE 3</a>
                 <a href="#PHASE-4">PHASE 4</a>
 
-                <a class="nav-cta"
-                    href="assets/ME382-Homework-7.pdf"
-                    target="_blank"
-                    rel="noopener">
+                <a class="nav-cta" href="assets/ME382-Homework-7.pdf" target="_blank" rel="noopener">
                     View report ↗
                 </a>
             </nav>
@@ -72,9 +66,7 @@
 
                     <div class="actions">
 
-                        <a class="btn ghost"
-                            href="assets/ME382-Homework-7.pdf"
-                            download>
+                        <a class="btn ghost" href="assets/ME382-Homework-7.pdf" download>
                             Download full design ↓
                         </a>
 
@@ -85,8 +77,7 @@
             </div>
         </section>
 
-
-        <!-- PHASE 1 - PROBLEM AND SOLUTION -->
+        <!-- ==============   PHASE 1 ============ -->
         <section class="section projects" id="PHASE-1">
             <div class="wrap">
 
@@ -97,45 +88,419 @@
 
                 <div class="project-content">
 
+
+                    <!-- ==============   Element A ============ -->
+
                     <div class="section-heading">
 
                         <h2>
-                            Element <span class="accent">01</span>
+                            <span class="accent">A.</span>
+                            Presentation & justification of Requirements
                         </h2>
 
-                        <p>
-                            Presenting and justifying problem.
-                        </p>
-                        
                     </div>
+
+                    <p class="paragraph-box">
+                        The objective of this project is to design and manufacture
+                        a sub-system that operates within a course-wide Rube Goldberg machine.
+                        The sub-system must reliably capture an input force transmit and
+                        transform that force through a series
+                        of mechanical components, and produce an output force capable of
+                        initiating the next peer's sub-system.
+                    </p>
+
+                    <p class="paragraph-box">
+                        To develop and justify requirements for this project a stakeholder
+                        analysis was conducted. Along with this engineering specifications
+                        were developed.
+                    </p>
+
+                    <h3>Stakeholder Analysis & Engineering Specifications Table</h3>
+
+                    <!-- Stakeholder & Engineering Spec table -->
+
+                    <section id="stakeholder-analysis">
+
+                        <div class="table-container">
+
+                            <table class="stakeholder-table">
+
+                                <thead>
+                                    <tr>
+                                        <th>Stakeholder</th>
+                                        <th>Need</th>
+                                        <th>Engineering Specification</th>
+                                        <th>Unit</th>
+                                        <th>Driving Direction</th>
+                                        <th>Min.</th>
+                                        <th>Target</th>
+                                        <th>Max.</th>
+                                    </tr>
+                                </thead>
+
+                                <!-- TIER 1 -->
+
+                                <tbody>
+
+                                    <tr class="tier-heading">
+                                        <th colspan="8">Tier 1 - Primary Stakeholders</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Me</td>
+                                        <td>
+                                            Learn more about motorcycle engineering
+                                            and design by implementing simple machines
+                                            that can be abstracted to more rigorous
+                                            motorcycle components.
+                                        </td>
+                                        <td>Number of motorcycle-related components</td>
+                                        <td>Count</td>
+                                        <td>&uarr;</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>12</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="3">Student After My Sub-system</td>
+                                        <td>
+                                            Reliably accept the output energy
+                                            of their sub-system.
+                                        </td>
+                                        <td>Energy capture</td>
+                                        <td>%</td>
+                                        <td>&uarr;</td>
+                                        <td>75</td>
+                                        <td>85</td>
+                                        <td>100</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Accept energy in a manner that preserves
+                                            its quality and minimizes energy losses.
+                                        </td>
+                                        <td>Energy efficiency</td>
+                                        <td>%</td>
+                                        <td>&uarr;</td>
+                                        <td>70</td>
+                                        <td>85</td>
+                                        <td>100</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Maintain open and effective communication.</td>
+                                        <td colspan="6" class="not-applicable">
+                                            Intentionally left blank.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="3">Student Prior to My Sub-system</td>
+                                        <td>
+                                            Reliably transmit energy to their sub-system.
+                                            The preliminary energy targets are based
+                                            on the assumed mass and velocity of a
+                                            projectile approximately the mass of an apple.
+                                        </td>
+                                        <td>Energy transmitted</td>
+                                        <td>J</td>
+                                        <td>&uarr;</td>
+                                        <td>0</td>
+                                        <td>14.4</td>
+                                        <td>62.5</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Transmit energy while preserving the quality
+                                            of the energy received from the previous
+                                            sub-system.
+                                        </td>
+                                        <td colspan="6" class="not-applicable">
+                                            Not orthogonal, but worth mentioning.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Maintain open and effective communication.</td>
+                                        <td colspan="6" class="not-applicable">
+                                            Intentionally left blank.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="3">Course Peers</td>
+                                        <td>
+                                            Operate within a reasonable amount of time
+                                            in the context of the course-wide system.
+                                        </td>
+                                        <td>Resetting time</td>
+                                        <td>s</td>
+                                        <td>&darr;</td>
+                                        <td>10</td>
+                                        <td>30</td>
+                                        <td>80</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Maintain reasonable physical dimensions.
+                                        </td>
+                                        <td>Volumetric system size</td>
+                                        <td>m<sup>3</sup></td>
+                                        <td>&darr;</td>
+                                        <td>0.0283</td>
+                                        <td>0.227</td>
+                                        <td>1.81</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Ensure safe operation of the sub-system.</td>
+                                        <td>Component velocities</td>
+                                        <td>m/s</td>
+                                        <td>&darr;</td>
+                                        <td>0</td>
+                                        <td>12</td>
+                                        <td>25</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Dr. Kang</td>
+                                        <td>
+                                            Demonstrate the ability to design a system
+                                            containing originally designed components
+                                            intended for additive manufacturing.
+                                        </td>
+                                        <td>Number of 3D printed components</td>
+                                        <td>Count</td>
+                                        <td>&uarr;</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>12</td>
+                                    </tr>
+
+                                </tbody>
+
+                                <!-- TIER 2 -->
+
+                                <tbody>
+
+                                    <tr class="tier-heading">
+                                        <th colspan="8">Tier 2 - Secondary Stakeholders</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="2">My Household Members</td>
+                                        <td>Maintain an affordable project budget.</td>
+                                        <td>Project budget</td>
+                                        <td>USD</td>
+                                        <td>&darr;</td>
+                                        <td>0</td>
+                                        <td>40</td>
+                                        <td>100</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Invoke a sense of excitement and/or pride.
+                                        </td>
+                                        <td colspan="6" class="not-applicable">
+                                            Intentionally left blank.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="2">Future Employers</td>
+                                        <td>
+                                            Demonstrate the ability to account for
+                                            anticipated and unanticipated loads in
+                                            3D printable components.
+                                        </td>
+                                        <td>
+                                            Factor of safety for 3D printed components
+                                            (subject to available analysis software)
+                                        </td>
+                                        <td>Dimensionless</td>
+                                        <td>&uarr;</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                        <td>15</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Demonstrate the ability to communicate
+                                            and develop ideas throughout the design
+                                            process and with collaborators.
+                                        </td>
+                                        <td>
+                                            Percentage of final portfolio rubric
+                                            requirements correctly completed
+                                        </td>
+                                        <td>%</td>
+                                        <td>&uarr;</td>
+                                        <td>0</td>
+                                        <td>90</td>
+                                        <td>100</td>
+                                    </tr>
+
+                                </tbody>
+
+                                <!-- TIER 3 -->
+
+                                <tbody>
+
+                                    <tr class="tier-heading">
+                                        <th colspan="8">Tier 3 - Tertiary Stakeholders</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="4">
+                                            Engineering Department at OSU
+                                        </td>
+                                        <td>
+                                            Invoke a sense of excitement,
+                                            passion, or exploration.
+                                        </td>
+                                        <td colspan="6" class="not-applicable">
+                                            Intentionally left blank.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Characterize the high quality of STEM
+                                            education provided by Oregon State University.
+                                        </td>
+                                        <td>
+                                            Number of engineering analyses conducted,
+                                            excluding factor of safety analysis
+                                        </td>
+                                        <td>Count</td>
+                                        <td>&uarr;</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                        <td>8</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Develop an innovative or unique sub-system.
+                                        </td>
+                                        <td colspan="6" class="not-applicable">
+                                            Intentionally left blank.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Ensure safety for students, faculty,
+                                            and members of the public.
+                                        </td>
+                                        <td colspan="6" class="not-applicable">
+                                            Not orthogonal, but worth mentioning.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Rube Goldberg Institute</td>
+                                        <td>
+                                            Maintain audience engagement through
+                                            relatively short and reliable operation
+                                            of each individual sub-system.
+                                        </td>
+                                        <td>Cycle time</td>
+                                        <td>s</td>
+                                        <td>&darr;</td>
+                                        <td>3</td>
+                                        <td>10</td>
+                                        <td>30</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="2">Department of Energy</td>
+                                        <td>
+                                            Develop a sub-system that invokes
+                                            a sense of awe.
+                                        </td>
+                                        <td colspan="6" class="not-applicable">
+                                            Not orthogonal, but worth mentioning.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Reduce the negative environmental impacts
+                                            associated with the sub-system.
+                                        </td>
+                                        <td>
+                                            Number of unusually environmentally
+                                            harmful components
+                                        </td>
+                                        <td>Count</td>
+                                        <td>&darr;</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Local Authorities</td>
+                                        <td>Ensure safe operation of the sub-system.</td>
+                                        <td>
+                                            Number of components possessing
+                                            high intrinsic operational safety risks
+                                        </td>
+                                        <td>Count</td>
+                                        <td>&darr;</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                        <p class="table-caption">
+                            Table 1. Stakeholder needs and engineering
+                            specifications.
+                        </p>
+
+                    </section>
+
+                    <p class="paragraph-box">
+                        The analysis of the stakeholder's needs determined
+                        requirements set
+                        by the Tier 1 - Primary Stakeholders. Of these
+                        requirements great importance was stressed for the reliability,
+                        operation, and originality of the design.
+                    </p>
+
+                    <p class="paragraph-box">
+                        For each stakeholder at least one engineering specification
+                        was derived. The specifications will be used to guide the design
+                        and ensure that the determined requirements are met.
+                    </p>
 
                     <!--INLINE CENTERED BUTTON - CHANGE WITH style-.... -->
                     <div class="actions" style="justify-content: center;">
 
-                        <a class="btn ghost"
-                            href="assets/ME382-Homework-7.pdf"
-                            download>
+                        <a class="btn ghost" href="assets/ME382-Homework-7.pdf" download>
                             Download the 9 design concepts. ↓
                         </a>
 
                     </div>
 
-            
-
-                    <!-- PARAGRAPH BOX -->
-                    <p class="paragraph-box">
-                        The requirements for the Rube Goldberg
-                        sub-system were determined through stakeholder
-                        analysis. The results of the analysis are
-                        shown below.
-                    </p>
-
 
                     <!-- IMAGE WITH CAPTION -->
                     <figure class="card">
 
-                        <img src="assets/gear-two.png"
-                            alt="Gear design two">
+                        <img src="assets/gear-two.png" alt="Gear design two">
 
                         <figcaption>
                             Centered caption below
@@ -144,102 +509,1284 @@
                     </figure>
 
 
-                    <!-- PARAGRAPH BOX -->
+                    <!-- ==============   Element B ============ -->
+
+                    <div class="section-heading">
+                        <h2>
+                            <span class="accent">B.</span>
+                            Benchmarking
+                        </h2>
+                    </div>
+
+
                     <p class="paragraph-box">
-                        The solution ...
+                        Benchmarking was conducted in order determine products of similar
+                        desired mechanical function. This benchmarking
+                        formed a starting point for the project's component make up.
+
+
+
                     </p>
 
+                    <p class="paragraph-box">
+                        Three simple machines were investigated
+                        to identify prospective components for the sub-system.
+                        These simple machines were
+                        levers, pulleys, and gears, wheels, and axles. Gear, wheels,
+                        and axles being taken to be of the same simple machine category.
+                    </p>
 
-                    <!-- ADDITIONAL ELEMENT -->
+                    <h3> Benchmarked Product Table </h3>
+
+                    <!-- Benchmarked products table -->
+                    <section id="benchmarking">
+
+                        <div class="table-container">
+
+                            <table class="benchmark-table">
+
+                                <thead>
+                                    <tr>
+                                        <th>Evaluation Criterion</th>
+                                        <th>Levers</th>
+                                        <th>Pulleys</th>
+                                        <th>Gears, Wheels, and Axles</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <!-- BACKGROUND -->
+
+                                    <tr>
+                                        <th>Background</th>
+
+                                        <td>
+                                            A lever consists of a rigid beam and a
+                                            fulcrum. The relative distances between
+                                            the effort, load, and fulcrum determine
+                                            the mechanical advantage of the system.
+
+                                            Levers are categorized into three classes
+                                            according to the relative positions of
+                                            these elements.
+                                        </td>
+
+                                        <td>
+                                            A pulley consists of a cable, wheel,
+                                            and axle. Pulleys are commonly used to
+                                            transport objects, redirect forces, and
+                                            provide mechanical advantage.
+
+                                            Multiple pulleys can be arranged to
+                                            achieve a desired mechanical advantage
+                                            and accommodate spatial requirements.
+                                        </td>
+
+                                        <td>
+                                            Wheels and axles provide mechanical
+                                            advantage through differences in radius.
+
+                                            Gears transmit and transform rotational
+                                            motion between axles, allowing torque
+                                            and angular velocity to be manipulated
+                                            through gear ratios.
+                                        </td>
+                                    </tr>
+
+                                    <!-- COMPONENTS -->
+
+                                    <tr>
+                                        <th>Primary Components</th>
+
+                                        <td>
+                                            <ul>
+                                                <li>Rigid beam</li>
+                                                <li>Fulcrum</li>
+                                            </ul>
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>Axle</li>
+                                                <li>Bearing</li>
+                                                <li>Bushing</li>
+                                                <li>Pulley wheel</li>
+                                                <li>Cable</li>
+                                            </ul>
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>Wheel</li>
+                                                <li>Axle</li>
+                                                <li>Cable</li>
+                                                <li>Bearing</li>
+                                                <li>Bushing</li>
+                                                <li>Gear</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <!-- POWER WITHOUT MOTOR -->
+
+                                    <tr>
+                                        <th>Power Requirements (Without Motor)</th>
+
+                                        <td>
+                                            Dependent upon the torque required
+                                            to achieve the desired mechanical
+                                            advantage and displacement of the load.
+                                        </td>
+
+                                        <td>
+                                            Dependent upon the force and motion
+                                            requirements of the load and the
+                                            configuration of the pulley system.
+                                        </td>
+
+                                        <td>
+                                            Dependent upon the torque and angular
+                                            velocity required to transmit motion
+                                            and achieve the desired output.
+                                        </td>
+                                    </tr>
+
+                                    <!-- POWER WITH MOTOR -->
+
+                                    <tr>
+                                        <th>Power Requirements (With Motor)</th>
+
+                                        <td>
+                                            <strong>Prospective Actuators:</strong>
+
+                                            <ul>
+                                                <li>Linear actuator</li>
+                                                <li>Stepper motor</li>
+                                            </ul>
+
+                                            <strong>Voltage:</strong> 12-24 VDC
+                                            <br>
+                                            <strong>Current:</strong> 2-15 A
+                                        </td>
+
+                                        <td>
+                                            <strong>Prospective Motors:</strong>
+
+                                            <ul>
+                                                <li>DC gear reduction motor</li>
+                                                <li>Worm gear motor</li>
+                                                <li>Stepper motor</li>
+                                            </ul>
+
+                                            <strong>Voltage:</strong> 12-24 VDC
+                                            <br>
+                                            <strong>Current:</strong> 1-15 A
+                                        </td>
+
+                                        <td>
+                                            <strong>Prospective Motors:</strong>
+
+                                            <ul>
+                                                <li>DC gear reduction motor</li>
+                                                <li>Worm gear motor</li>
+                                                <li>Stepper motor</li>
+                                                <li>Servo motor</li>
+                                            </ul>
+
+                                            <strong>Voltage:</strong> 12-24 VDC
+                                            <br>
+                                            <strong>Current:</strong> 1-15 A
+                                        </td>
+                                    </tr>
+
+                                    <!-- GENERAL MATERIALS -->
+
+                                    <tr>
+                                        <th>General Materials</th>
+
+                                        <td>
+                                            <ul>
+                                                <li>Steel</li>
+                                                <li>Aluminum</li>
+                                                <li>Hardened alloys</li>
+                                                <li>Wood</li>
+                                                <li>Polymers</li>
+                                            </ul>
+                                        </td>
+
+                                        <td>
+                                            <strong>Structural Components:</strong>
+
+                                            <ul>
+                                                <li>Steel</li>
+                                                <li>Aluminum</li>
+                                                <li>Hardened alloys</li>
+                                                <li>Composites</li>
+                                            </ul>
+
+                                            <strong>Cable Materials:</strong>
+
+                                            <ul>
+                                                <li>Nylon</li>
+                                                <li>Polypropylene</li>
+                                                <li>Other polymers</li>
+                                                <li>Steel cable</li>
+                                            </ul>
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>Wood</li>
+                                                <li>Plastics</li>
+                                                <li>Aluminum alloys</li>
+                                                <li>Advanced composites</li>
+                                                <li>Specialized metal alloys</li>
+                                                <li>Nylon and steel cable</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <!-- ADDITIVE MANUFACTURING -->
+
+                                    <tr>
+                                        <th>Prospective 3D Printing Materials</th>
+
+                                        <td>
+                                            <strong>Rigid Beam:</strong> PLA
+                                            <br>
+                                            <strong>Fulcrum:</strong> PLA
+                                        </td>
+
+                                        <td>
+                                            <strong>Pulley Wheel:</strong> PETG, PLA
+                                            <br>
+                                            <strong>Axles:</strong> Nylon, PETG
+                                            <br>
+                                            <strong>Bushings:</strong> Nylon, PETG
+                                            <br>
+                                            <strong>Bearings:</strong> Nylon, PETG
+                                            <br>
+                                            <strong>Cable:</strong> Nylon or household string
+                                        </td>
+
+                                        <td>
+                                            <strong>Gears:</strong> Nylon, PETG
+                                            <br>
+                                            <strong>Wheels:</strong> PLA, PETG
+                                            <br>
+                                            <strong>Axles:</strong> Nylon
+                                            <br>
+                                            <strong>Bushings:</strong> Nylon, PETG
+                                            <br>
+                                            <strong>Bearings:</strong> Nylon, PETG
+                                        </td>
+                                    </tr>
+
+                                    <!-- CONSUMABLES -->
+
+                                    <tr>
+                                        <th>Consumables and Maintenance</th>
+
+                                        <td>
+                                            <ul>
+                                                <li>Grease</li>
+                                                <li>Oils</li>
+                                                <li>Hydraulic fluid</li>
+                                                <li>Bushings</li>
+                                                <li>Bearings</li>
+                                            </ul>
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>Bearings</li>
+                                                <li>Bushings</li>
+                                                <li>Shafts</li>
+                                                <li>Cables</li>
+                                                <li>Fasteners</li>
+                                                <li>Grease</li>
+                                                <li>Hydraulic fluid</li>
+                                            </ul>
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>Bearings</li>
+                                                <li>Bushings</li>
+                                                <li>Shafts</li>
+                                                <li>Cables</li>
+                                                <li>Fasteners</li>
+                                                <li>Lubricants</li>
+                                                <li>Replacement gears</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <!-- BENCHMARKED PRODUCTS -->
+
+                                    <tr class="benchmark-heading">
+                                        <th colspan="4">
+                                            Existing Products and User Analysis
+                                        </th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Benchmarked Products</th>
+
+                                        <td>
+                                            <strong>
+                                                LighTech Magnesium Folding Brake
+                                                and Clutch Lever Kit
+                                            </strong>
+
+                                            <p>
+                                                Aftermarket motorcycle control levers
+                                                designed to improve ergonomics,
+                                                aesthetics, and resistance to
+                                                damage during contact.
+                                            </p>
+
+                                            <a href="https://www.revzilla.com/motorcycle/lightech-magnesiumaluminium-lever-kits-brake-clutc-18?sku_id=10447155"
+                                                target="_blank" rel="noopener">
+                                                View Product
+                                            </a>
+                                        </td>
+
+                                        <td>
+                                            <strong>Snatch Block Pulley</strong>
+
+                                            <p>
+                                                A pulley with an opening housing
+                                                that allows a cable to be inserted
+                                                or removed without threading it
+                                                through the entire assembly.
+                                            </p>
+
+                                            <a href="https://www.youtube.com/watch?v=M2w3NZzPwOM" target="_blank"
+                                                rel="noopener">
+                                                View Demonstration
+                                            </a>
+
+                                            <hr>
+
+                                            <strong>Vortex 520 Front Sprocket</strong>
+
+                                            <p>
+                                                An aftermarket motorcycle drivetrain
+                                                component investigated as a related
+                                                mechanism for transmitting mechanical
+                                                energy through a flexible tension member.
+                                            </p>
+
+                                            <a href="https://www.revzilla.com/motorcycle/vortex-520-front-sprocket-aprilia-rs-660-tuono-660-tuareg-660"
+                                                target="_blank" rel="noopener">
+                                                View Product
+                                            </a>
+                                        </td>
+
+                                        <td>
+                                            <strong>
+                                                Traxxas Metal Axle Gears for TRX-4M
+                                            </strong>
+
+                                            <p>
+                                                Metal replacement gears intended
+                                                for use in a small-scale mechanical
+                                                drivetrain.
+                                            </p>
+
+                                            <a href="https://www.amazon.com/dp/B0CD9DW56F" target="_blank"
+                                                rel="noopener">
+                                                View Product
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <!-- USER SENTIMENT -->
+
+                                    <tr>
+                                        <th>General User Sentiment</th>
+
+                                        <td>
+                                            Users value the versatility of levers
+                                            and their ability to provide mechanical
+                                            advantage across different applications.
+
+                                            Motorcycle lever users also value
+                                            ergonomic customization, improved
+                                            control, aesthetics, and folding
+                                            mechanisms that mitigate damage.
+                                        </td>
+
+                                        <td>
+                                            The snatch block demonstration
+                                            illustrates the versatility and
+                                            modularity of pulley systems.
+
+                                            Motorcycle drivetrain users value
+                                            customization, gearing selection,
+                                            maintenance accessibility, and
+                                            perceived improvements in throttle
+                                            response.
+
+                                            Reported performance improvements
+                                            were not experimentally verified.
+                                        </td>
+
+                                        <td>
+                                            User reviews of replacement metal
+                                            gears identify stripping of plastic
+                                            gear teeth as a concern.
+
+                                            These observations suggest that
+                                            material selection, wear resistance,
+                                            and lubrication are important
+                                            considerations when designing
+                                            3D printed gears.
+                                        </td>
+                                    </tr>
+
+                                    <!-- STRENGTHS -->
+
+                                    <tr>
+                                        <th>Strengths</th>
+
+                                        <td>
+                                            <ul>
+                                                <li>Low mechanical complexity</li>
+                                                <li>Configurable mechanical advantage</li>
+                                                <li>Minimal component requirements</li>
+                                                <li>Potential for passive operation</li>
+                                                <li>Relevance to motorcycle controls</li>
+                                            </ul>
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>Flexible force transmission</li>
+                                                <li>Ability to redirect forces</li>
+                                                <li>Configurable mechanical advantage</li>
+                                                <li>Modular configurations</li>
+                                                <li>Transmission across separated locations</li>
+                                            </ul>
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>Controlled rotational motion</li>
+                                                <li>Configurable torque ratios</li>
+                                                <li>Configurable velocity ratios</li>
+                                                <li>Positive mechanical engagement</li>
+                                                <li>Relevance to motorcycle transmissions</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <!-- SHORTCOMINGS -->
+
+                                    <tr>
+                                        <th>Shortcomings</th>
+
+                                        <td>
+                                            <ul>
+                                                <li>Limited range of motion</li>
+                                                <li>Potential pivot friction</li>
+                                                <li>Stress concentrations near fulcrum</li>
+                                                <li>Force and displacement trade-offs</li>
+                                            </ul>
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>Potential cable wear</li>
+                                                <li>Frictional energy losses</li>
+                                                <li>Potential cable misalignment</li>
+                                                <li>Cable routing requirements</li>
+                                                <li>Potential maintenance requirements</li>
+                                            </ul>
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>Potential gear tooth stripping</li>
+                                                <li>Wear of mating surfaces</li>
+                                                <li>Dimensional tolerance requirements</li>
+                                                <li>Potential backlash</li>
+                                                <li>Increased manufacturing complexity</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <!-- DESIGN IMPLICATIONS -->
+
+                                    <tr class="design-implications">
+                                        <th>Implications for Sub-system Design</th>
+
+                                        <td>
+                                            Levers may provide a mechanically
+                                            simple means of capturing input energy,
+                                            redirecting forces, and triggering
+                                            subsequent mechanical stages.
+
+                                            Pivot geometry and structural integrity
+                                            should be evaluated during detailed design.
+                                        </td>
+
+                                        <td>
+                                            Pulleys may provide a means of
+                                            transmitting mechanical energy
+                                            between spatially separated stages.
+
+                                            Cable routing, alignment, tension,
+                                            and friction should be considered
+                                            during concept development.
+                                        </td>
+
+                                        <td>
+                                            Gears may provide a means of controlling
+                                            the torque and angular velocity
+                                            transmitted between mechanical stages.
+
+                                            Material selection, tooth geometry,
+                                            manufacturing tolerances, and wear
+                                            resistance should be evaluated.
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                        <p class="table-caption">
+                            Table 2. Comparative benchmarking of mechanical systems,
+                            existing products, material requirements, user sentiment,
+                            functional advantages, and design limitations.
+                        </p>
+
+                    </section>
+
+
+                    <!-- Element C -->
+
                     <div class="section-heading">
 
                         <h2>
-                            Element <span class="accent">02</span>
+                            <span class="accent">C.</span>
+                            Concluding Design Project Requirements
                         </h2>
-
-                        <p>
-                            Documentation and analysis of products with similar function.
-                        </p>
-
-                    </div>
-
-
-                    <p class="paragraph-box">
-                        Some more information.
-                    </p>
-
-
-                    <!-- IMAGE WITH SIDE TEXT -->
-                    <div class="container">
-
-                        <img src="assets/gear-one.png"
-                            alt="Gear design one">
-
-                        <p>
-                            Centered text next to the image
-                        </p>
-
-                    </div>
-
-                    <div class="section-heading">
-
-                        <h2>
-                            Element <span class="accent">03</span>
-                        </h2>
-
-                        <p>
-                            Presentation and justification of solution
-                            design requirements.
-                        </p>
 
                     </div>
 
                     <p class="paragraph-box">
-                        Some more information.
+                        The above stakeholder analysis, engineering specifications, and
+                        benchmarks were used to determine general guidelines to follow for
+                        this project's design process.
                     </p>
-                    
+
                 </div>
 
             </div>
         </section>
 
 
-        <!-- PHASE 2 - GENERATING AND ANALYZING A COMPLETED SOLUTION -->
+
+        <!-- ==============   PHASE 2 ============ -->
         <section class="section projects2" id="PHASE-2">
             <div class="wrap">
 
-
-
-
                 <div class="section-label">
-                    02 GENERALIZATION &amp; SUBSEQUENT ANALYSES
+                    02 PRELIMINARY DESIGN & ANALYSIS
                 </div>
 
 
-
+                <!-- Element D -->
                 <div class="project-content">
 
                     <div class="section-heading">
 
                         <h2>
-                            Element <span class="accent">01</span>
+                            <span class="accent">D.</span>
+                            Design for Function
                         </h2>
 
-                        <p>
-                            Design for function.
+                    </div>
+
+                    <h3> Potential Product Functions </h3>
+
+                    <p class="paragraph-box">
+                        A list of 10 products functions were developed based off of the
+                        design requirements determined from the stakeholder needs.
+                    </p>
+
+                    <ol>
+                        <li>Transport material.</li>
+                        <li>Release a projectile by way of rotational motion.</li>
+                        <li>Transform rotational motion from one axis to another.</li>
+                        <li>Convert electrical potential into mechanical motion.</li>
+                        <li>Detect an input force.</li>
+                        <li>Translate a signal into a catalyst.</li>
+                        <li>Redirect the flow of material.</li>
+                        <li>Absorb heat energy.</li>
+                        <li>Transform rotational motion to linear motion.</li>
+                        <li>Transfer pneumatic energy.</li>
+                    </ol>
+
+                    <p class="paragraph-box">
+                        From this list a functional decomposition diagram was generated. It considers
+                        the sub-functions of the potential system and features
+                        7 of the 10 functional flows.
+                    </p>
+
+                    <figure class="card">
+                        <iframe src="assets/functional-decomposition-diagram.pdf#toolbar=0&navpanes=0&view=FitH"
+                            width="100%" height="950" style="border: none;" title="Functional Decomposition Diagram">
+                        </iframe>
+                        <figcaption>Functional Decomposition Diagram</figcaption>
+                    </figure>
+
+                    <!-- Element E -->
+                    <div class="section-heading">
+
+                        <h2>
+                            <span class="accent">E.</span>
+                            Design Concept Generation & Selection Process
+                        </h2>
+
+                    </div>
+
+                    <h3> Preliminary Product sketch </h3>
+
+                    <p class="paragraph-box">
+                        From the functional decomposition a preliminary product
+                        concept was developed. The concept meets stakeholder needs and engineering specifications
+                        because the functional decomposition was developed with them in mind.
+                    </p>
+
+                    <figure class="card">
+
+                        <img src="assets/initial-concept-1.png" alt="Preliminary Concept Sketch 1">
+
+                        <figcaption>
+                            Preliminary Concept Sketch 1: A conceptual overview of the
+                            entire system. The numbers correspond to sub-functions from the
+                            functional decomposition.
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="card">
+
+                        <img src="assets/initial-concept-2.png" alt="Preliminary Concept Sketch 2">
+
+                        <figcaption>
+                            Preliminary Concept Sketch 2: A more detailed view of
+                            components that are key to meeting stakeholder needs.
+                        </figcaption>
+
+                    </figure>
+
+                    <h3> Morphology Chart </h3>
+
+
+                    <p class="paragraph-box">
+                        Following the development of a preliminary product sketch, a morphology
+                        chart was created that would constraint the proceeding concept generation.
+                        Since the functional flow diagram meets stakeholder needs and
+                        engineering specifications, so to does the morphology chart.
+                    </p>
+
+                    <figure class="card">
+                        <iframe src="assets/morphology-chart.pdf#toolbar=0&navpanes=0&view=FitH" width="100%"
+                            height="550" style="border: none;" title="Morphology Chart">
+                        </iframe>
+                        <figcaption>Morphology Chart: The building blocks for the
+                            upcoming concepts generation.
+                        </figcaption>
+                    </figure>
+
+
+                    <h3> 9 Concept Sketches </h3>
+
+                    <p class="paragraph-box">
+                        Following the morphology chart, 9 concept
+                        sketches were generated. Given that the morphology charts meets
+                        stakeholder needs and specifications it follows that the 9 concept sketches
+                        should as well.
+                    </p>
+
+                    <figure class="card">
+                        <iframe src="assets/9-concepts.pdf#toolbar=0&navpanes=0&view=FitH" width="100%" height="650"
+                            style="border: none;" title="9 Preliminary Design Concepts">
+                        </iframe>
+                        <figcaption>9 Design Concepts</figcaption>
+                    </figure>
+
+                    <h3> Pugh Decision Chart</h3>
+
+                    <p class="paragraph-box">
+                        The 9 prospective design concepts were weighted against a commonly
+                        datum. The datum was the 'Gate to Bucket' concept.
+                        The weights range from 1 to 5.
+                    </p>
+
+
+                    <section id="concept-evaluation">
+
+                        <div class="table-container">
+
+                            <table class="pugh-table">
+
+                                <thead>
+                                    <tr>
+                                        <th>Design Objective</th>
+                                        <th>Weight (1 to 5)</th>
+                                        <th class="datum">Gate to Bucket (DATUM)</th>
+                                        <th>Tres Wheels</th>
+                                        <th>Ramp to Ramp</th>
+                                        <th>Flailing Rod</th>
+                                        <th>The Sewing Machine</th>
+                                        <th>Electromagnetic Track</th>
+                                        <th>Spring Power</th>
+                                        <th>Actuated Pulley Driver</th>
+                                        <th>45-deg Belt</th>
+                                        <th>Weighted Points Away from Datum per Design Objective</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <th>Design contains originally designed 3D printed components.</th>
+                                        <td>5</td>
+                                        <td class="datum"></td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Design is objectively safe.</th>
+                                        <td>3</td>
+                                        <td class="datum"></td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-3</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Design is of reasonable size.</th>
+                                        <td>2</td>
+                                        <td class="datum"></td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>-1</td>
+                                        <td>-1</td>
+                                        <td class="highlight">1</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>-6</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Design offers a fast reset time for debugging.</th>
+                                        <td>4</td>
+                                        <td class="datum"></td>
+                                        <td>1</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Design ideates a reliable method of capturing the input force.</th>
+                                        <td>5</td>
+                                        <td class="datum"></td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td class="critical">-15</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Design offers objective efficiency in energy transfer.</th>
+                                        <td>4</td>
+                                        <td class="datum"></td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td class="highlight">1</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>-8</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Design ideates a reliable method to produce an output force.</th>
+                                        <td>5</td>
+                                        <td class="datum"></td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td class="highlight">1</td>
+                                        <td>-1</td>
+                                        <td class="highlight">1</td>
+                                        <td>10</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            Design is objectively stable or leaves
+                                            easy to develop room for structural stability.
+                                        </th>
+                                        <td>5</td>
+                                        <td class="datum"></td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td class="highlight">1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>15</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Design offers reasonable operational time.</th>
+                                        <td>3</td>
+                                        <td class="datum"></td>
+                                        <td>-1</td>
+                                        <td>-1</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>-3</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            Design offers the ability to incorporate
+                                            environmentally conscious components
+                                            or integrations.
+                                        </th>
+                                        <td>2</td>
+                                        <td class="datum"></td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-2</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Design is affordable.</th>
+                                        <td>3</td>
+                                        <td class="datum"></td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>-1</td>
+                                        <td>-9</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            Design offers an industrial/tactile
+                                            aesthetic or leaves room to incorporate it.
+                                        </th>
+                                        <td>4</td>
+                                        <td class="datum"></td>
+                                        <td>-1</td>
+                                        <td>-1</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td class="critical">-16</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            Design includes components that are
+                                            abstracted from the components of a motorcycle.
+                                        </th>
+                                        <td>5</td>
+                                        <td class="datum"></td>
+                                        <td>-1</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td class="critical">-20</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            Design offers a clear conceptual route
+                                            to further develop.
+                                        </th>
+                                        <td>5</td>
+                                        <td class="datum"></td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td class="critical">-15</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Display STEM education.</th>
+                                        <td>3</td>
+                                        <td class="datum"></td>
+                                        <td>-1</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>-9</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Design conveys a subjective sense of intrigue.</th>
+                                        <td>3</td>
+                                        <td class="datum"></td>
+                                        <td>-1</td>
+                                        <td>-1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+
+                                </tbody>
+
+                                <tfoot>
+
+                                    <tr>
+                                        <th>Total</th>
+                                        <td>61</td>
+                                        <td class="datum"></td>
+                                        <td>-3</td>
+                                        <td>-5</td>
+                                        <td>-4</td>
+                                        <td>-1</td>
+                                        <td>-4</td>
+                                        <td>3</td>
+                                        <td>-9</td>
+                                        <td>0</td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr class="weighted-total">
+                                        <th>Weighted Total</th>
+                                        <td>61</td>
+                                        <td class="datum"></td>
+                                        <td>-9</td>
+                                        <td>-17</td>
+                                        <td>-17</td>
+                                        <td>-2</td>
+                                        <td>-14</td>
+                                        <td class="positive">11</td>
+                                        <td>-35</td>
+                                        <td class="positive">2</td>
+                                        <td></td>
+                                    </tr>
+
+                                </tfoot>
+
+                            </table>
+
+                        </div>
+
+                        <p class="matrix-legend">
+                            Pugh Decision Chart: <strong>Scoring:</strong>
+                            +1 = Superior to datum |
+                            0 = Equivalent to datum |
+                            -1 = Inferior to datum
                         </p>
 
+                    </section>
+
+                    <h3> Pugh Decision Chart Analysis</h3>
+
+                    <p class="paragraph-box">
+                        For my datum the Gate to Bucket concept was chosen. This decision was based on a favoring
+                        initial ideation of my system. Furthermore, I thought it most nearly represented a design that
+                        would meet my design objectives. However, the results of the pugh decision chart suggest that
+                        the
+                        concepts, Spring Power and 45-deg Belt, would better meet the design objectives than the chosen
+                        datum. In some respect I agree, but I don’t believe the answer is as simple as Spring Power
+                        received +11, so it’s the best suited concept. I believe the end design result will actually be
+                        a
+                        combination of all three of these designs.
+                    </p>
+
+                    <p class="paragraph-box">
+                        On the pugh decision chart, the elements highlighted orange are objectives for which Spring
+                        Power and
+                        45-deg Belt outperformed Gate to Bucket. Both concepts were rated to have superior methods
+                        for producing an output force. This method is a force due to a linear pushing force (likely due
+                        to
+                        a rod). I believe this to be the output function to focus on. I find it challenging to accept
+                        that the
+                        other output functions, such as solid/liquid being dropped or released from a ledge or the top
+                        of
+                        an incline, are reliable given the time constraints of the project. Not to mention, in theory,
+                        there
+                        is less room for error and unpredictability. A linear pushing force offers and method to supply
+                        an
+                        output force with reliability and thus more closely meets the design objectives.
+                    </p>
+
+                    <p class="paragraph-box">
+                        If the force were by a rob the output method meets the design requirements of 'structural
+                        stability' and 'use of components abstracted from motorcycle components.' Which leads to the
+                        discussion on why the Spring Power had a better rating in the structural stability design
+                        objective. Noticeably, most of the system is housed in a structure and has well supported
+                        rotating
+                        parts. Taking more consideration in structural support components and/or housing is a key aspect
+                        that is under looked in all other design concepts, including the datum Gate to Bucket. Future
+                        design integrations should take this into account to meet the structural stability design
+                        objective.
+                    </p>
+
+                    <p class="paragraph-box">
+                        In general, design objectives that the concepts of Spring Power and 45-belt rated higher should
+                        be taken into account and integrated into the general layout of the Gate to Bucket design, or
+                        whichever every design comes about for finalization. To tackle this problem in the most general
+                        way (as not to get fixated on one design for future finalization) I have created a column that
+                        includes the weighted number of points for which each design objective either fell below or
+                        above that of the datum. From this, a general shortcoming in meeting design objectives can be
+                        seen across the conceptualization process. Design objects marked in the red are objectives that
+                        fall short and will need to be taken into further consideration in later concepts and finalized
+                        design.
+
+                    </p>
+
+                    <!-- Element F -->
+                    <div class="section-heading">
+
+                        <h2>
+                            <span class="accent">F.</span>
+                            Analysis & Selection
+                        </h2>
+
+                    </div>
+
+                    <h3> 3 Detailed Design Concepts </h3>
+
+                    <p class="paragraph-box">
+                        Guided by the results of the pugh decision chart 3 concepts were
+                        selected for more detailed concept generation. These concepts include:
+                        'Gate to Bucket' (Datum), '45-degree Belt/Chain', and 'Spring Power.' Of the
+                        3 concepts 'Gate to Bucket' received the most revision for reasons discussed
+                        in the pugh decision chart analysis.
+                    </p>
+
+                    <figure class="card">
+                        <iframe src="assets/3-concept-detailed.pdf#toolbar=0&navpanes=0&view=FitH" width="100%"
+                            height="425" style="border: none;" title="3 Selected Concepts: More Detailed Added">
+                        </iframe>
+                        <figcaption>3 Selected Concepts: Each sketched concepts includes more
+                            detail then the original concept sketch and lays out
+                            the mechatronic system involved in it.
+                        </figcaption>
+                    </figure>
+
+                    <h3> 3 Engineering Analyses </h3>
+
+                    <p class="paragraph-box">
+                        For each of the 3 design concepts a detailed analysis was conducted
+                        with the goal of understanding the physical feasibility of the design
+                        and it's possible requirements.
+                    </p>
+
+                    <h3> Spring Power Analysis </h3>
+
+                    <figure class="card">
+                        <iframe src="assets/spring-power-analysis.pdf#toolbar=0&navpanes=0&view=FitH" width="100%"
+                            height="600" style="border: none;" title="Spring Power Analysis">
+                        </iframe>
+                        <figcaption> Spring Power Analysis
+                        </figcaption>
+                    </figure>
+
+                    <h3> Discussion </h3>
+
+                    <p class="paragraph-box">
+                        The results of the analysis show that for the rod to achieve approximately 1.5 m/s and supply
+                        approximately 4 N of force the spring will have to have a spring coefficient of around 110 N /
+                        m.
+                        This is reasonable. Furthermore, altering the length of the spring and its compressed length
+                        will
+                        have a similar effect on the spring coefficient and the spring force, respectively. If a
+                        sufficient
+                        spring isn't able to be found, these parameters may be altered instead to achieve the desired
+                        output velocity and force.
+                    </p>
+
+                    <h3> 45-degree Belt/Chain Analysis </h3>
+
+                    <figure class="card">
+                        <iframe src="assets/45-deg-belt-analysis.pdf#toolbar=0&navpanes=0&view=FitH" width="100%"
+                            height="600" style="border: none;" title="45-degree Belt/Chain Analysis">
+                        </iframe>
+                        <figcaption> 45-degree Belt/Chain Analysis
+                        </figcaption>
+                    </figure>
+
+                    <h3> Discussion </h3>
+
+                    <p class="paragraph-box">
+                        The results of the analysis show that for a similar shaft characteristic the loss in torque from
+                        shaft
+                        1 to shafter 2 is dominated by bearing and disc friction at the support. To reduce these
+                        effects,
+                        the coefficient of friction should be made as low as possible with lubrication (Vaseline, WD-40,
+                        or some other suitable grease for the component material). The analysis shows that with an
+                        approximate coefficient of friction of 0.1 for a lubricated surface, the torque transfer can
+                        stay
+                        around 88%. It will likely be much lower than this because the coefficient of friction ranges
+                        from
+                        below 0.1 to about 0.3 for different lubricants. Not to mention, the analysis doesn't consider
+                        general motor losses, losses from the motor to shaft 1, general inertial losses from the shaft's
+                        shape, and belt friction.
+                    </p>
+
+                    <h3> Gate to Rod Analysis </h3>
+
+                    <figure class="card">
+                        <iframe src="assets/gate-to-bucket-analysis.pdf#toolbar=0&navpanes=0&view=FitH" width="100%"
+                            height="600" style="border: none;" title="Gate to Rod Analysis">
+                        </iframe>
+                        <figcaption> Gate to Rod Analysis
+                        </figcaption>
+                    </figure>
+
+                    <h3> Discussion </h3>
+
+                    <p class="paragraph-box">
+                        The results of the analysis show a strong dependency on the geometry of the system as it
+                        pertains
+                        to the velocity of the output rod. They are also suggesting that with the current dimensioning
+                        1.5
+                        m / s is easily obtained at the rod. 82 rpm is easily obtained by a motor. Not to mention, a low
+                        angular speed is desired. Due to the high inertial mass that needs to be rotated, a larger
+                        torque is
+                        needed. Assuming a sufficient gearing ratio is found, the result of this found ratio will likely
+                        suggest a step up that increases the torque and reduces the speed. Finally, the result of the
+                        analysis stresses the importance of rod being constrained to only slide horizontally.
+                    </p>
+
+                    <h3> Final Concept Decision </h3>
+
+                    <p class="paragraph-box">
+                        For reasons including general intrigue, feasibility, and adherence to stakeholder
+                        needs, engineering specifications the concept selected for further design and
+                        to inevitable be finalized is 'Spring Power.'
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==============   PHASE 3 ============ -->
+        <section class="section projects" id="PHASE-3">
+            <div class="wrap">
+
+                <div class="section-label">
+                    03 DETAILED DESIGN, PROTOTYPING, AND SIMULATION
+                </div>
+
+
+                <div class="project-content">
+
+                    <div class="section-heading">
+                        <h2>
+                            <span class="accent">G.</span>
+                            CAD Model
+                        </h2>
+                    </div>
+
+                    <!-- ELEMENT H -->
+                    <div class="section-heading">
+
+                        <h2>
+                            <span class="accent">H.</span>
+                            Engineering Analysis
+                        </h2>
+
+                    </div>
+
+                    <!-- ELEMENT I -->
+                    <div class="section-heading">
+                        <h2>
+                            <span class="accent">I.</span>
+                            Simulation, Testing, and Data Collection
+                        </h2>
                     </div>
 
                     <!-- SIMULATION VIDEO -->
                     <div class="video-wrapper">
 
-                        <video src="assets/stress-analysis-trimmed.mp4"
-                            autoplay
-                            loop
-                            muted
-                            playsinline
-                            controls
+                        <video src="assets/stress-analysis-trimmed.mp4" autoplay loop muted playsinline controls
                             preload="auto">
                         </video>
 
@@ -253,84 +1800,13 @@
 
                     <!-- PARAGRAPH BOX -->
                     <p class="paragraph-box">
-                            A simulation of the Von Mises stress distribution under a 10 N load
-                            with a fixed end is shown above. It can be seen that if the component were caught (fixed at the end)
-                            the the maximum Von Mises stress would still be a fifth of the yield stress for Nylon 12, which is between
-                            40 MPa and 50 MPa.
+                        A simulation of the Von Mises stress distribution under a 10 N load
+                        with a fixed end is shown above. It can be seen that if the component were caught (fixed at the
+                        end)
+                        the the maximum Von Mises stress would still be a fifth of the yield stress for Nylon 12, which
+                        is between
+                        40 MPa and 50 MPa.
                     </p>
-
-
-                    <!-- IMAGE WITH SIDE TEXT -->
-                    <div class="container">
-
-                        <img src="assets/gear-one.png"
-                            alt="Gear design one">
-
-                        <p>
-                            Centered text next to the image
-                        </p>
-
-                    </div>
-
-
-                    <!-- IMAGE WITH CAPTION -->
-                    <figure class="card">
-
-                        <img src="assets/gear-two.png"
-                            alt="Gear design two">
-
-                        <figcaption>
-                            Centered caption below
-                        </figcaption>
-
-                    </figure>
-
-
-                    <!-- PARAGRAPH BOX -->
-                    <p class="paragraph-box">
-                        A paragraph.
-                    </p>
-
-                    <div class="section-heading">
-
-                        <h2>
-                            Element <span class="accent">02</span>
-                        </h2>
-
-                        <p>
-                            Design concept generation, analysis, and selection.
-                        </p>
-
-                    </div>
-
-                    <!-- PARAGRAPH BOX -->
-                    <p class="paragraph-box">
-                        A paragraph.
-                    </p>
-
-                    <div class="section-heading">
-
-                        <h2>
-                            Element <span class="accent">03</span>
-                        </h2>
-
-                        <p>
-                            Application of STEM principles and practices through analysis.
-                        </p>
-
-                    </div>
-
-                    <!-- IMAGE WITH CAPTION -->
-                    <figure class="card">
-
-                        <img src="assets/gear-two.png"
-                            alt="Gear design two">
-
-                        <figcaption>
-                            Centered caption below
-                        </figcaption>
-
-                    </figure>
 
                 </div>
 
@@ -338,116 +1814,9 @@
         </section>
 
 
-
-        <!-- PHASE 3 -->
-        <section class="section projects" id="PHASE-3">
-            <div class="wrap">
-
-                <div class="section-label">
-                    03 DETAILED DESIGN, PROTOTYPING, AND SIMULATION
-                </div>
-
-
-                <div class="project-content">
-
-                    <div class="section-heading">
-
-                        <h2>
-                            Element <span class="accent">01</span>
-                        </h2>
-
-                        <p>
-                            Computational modeling of concept assembly.
-                        </p>
-
-                    </div>
-
-                    <!-- PARAGRAPH BOX -->
-                    <p class="paragraph-box">
-                        The requirements for the Rube Goldberg
-                        sub-system were determined through stakeholder
-                        analysis. The results of the analysis are
-                        shown below.
-                    </p>
-
-
-                    <!-- IMAGE WITH CAPTION -->
-                    <figure class="card">
-
-                        <img src="assets/gear-two.png"
-                            alt="Gear design two">
-
-                        <figcaption>
-                            Centered caption below
-                        </figcaption>
-
-                    </figure>
-
-
-                    <!-- PARAGRAPH BOX -->
-                    <p class="paragraph-box">
-                        The solution ...
-                    </p>
-
-
-                    <!-- ADDITIONAL ELEMENT -->
-                    <div class="section-heading">
-
-                        <h2>
-                            Element <span class="accent">02</span>
-                        </h2>
-
-                        <p>
-                            Full physics and engineering analysis
-                        </p>
-
-                    </div>
-
-
-                    <p class="paragraph-box">
-                        Some more information.
-                    </p>
-
-
-                    <!-- IMAGE WITH SIDE TEXT -->
-                    <div class="container">
-
-                        <img src="assets/gear-one.png"
-                            alt="Gear design one">
-
-                        <p>
-                            Centered text next to the image
-                        </p>
-
-                    </div>
-
-                    <div class="section-heading">
-
-                        <h2>
-                            Element <span class="accent">03</span>
-                        </h2>
-
-                        <p>
-                            Simulation/computational testing and data collection.
-                        </p>
-
-                    </div>
-
-                    <p class="paragraph-box">
-                        Some more information.
-                    </p>
-                    
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- PHASE 4 - GENERATING AND ANALYZING A COMPLETED SOLUTION -->
+        <!-- PHASE 4  -->
         <section class="section projects2" id="PHASE-4">
             <div class="wrap">
-
-
 
 
                 <div class="section-label">
@@ -473,12 +1842,7 @@
                     <!-- SIMULATION VIDEO -->
                     <div class="video-wrapper">
 
-                        <video src="assets/stress-analysis-trimmed.mp4"
-                            autoplay
-                            loop
-                            muted
-                            playsinline
-                            controls
+                        <video src="assets/stress-analysis-trimmed.mp4" autoplay loop muted playsinline controls
                             preload="auto">
                         </video>
 
@@ -492,18 +1856,19 @@
 
                     <!-- PARAGRAPH BOX -->
                     <p class="paragraph-box">
-                            A simulation of the Von Mises stress distribution under a 10 N load
-                            with a fixed end is shown above. It can be seen that if the component were caught (fixed at the end)
-                            the the maximum Von Mises stress would still be a fifth of the yield stress for Nylon 12, which is between
-                            40 MPa and 50 MPa.
+                        A simulation of the Von Mises stress distribution under a 10 N load
+                        with a fixed end is shown above. It can be seen that if the component were caught (fixed at the
+                        end)
+                        the the maximum Von Mises stress would still be a fifth of the yield stress for Nylon 12, which
+                        is between
+                        40 MPa and 50 MPa.
                     </p>
 
 
                     <!-- IMAGE WITH SIDE TEXT -->
                     <div class="container">
 
-                        <img src="assets/gear-one.png"
-                            alt="Gear design one">
+                        <img src="assets/gear-one.png" alt="Gear design one">
 
                         <p>
                             Centered text next to the image
@@ -515,8 +1880,7 @@
                     <!-- IMAGE WITH CAPTION -->
                     <figure class="card">
 
-                        <img src="assets/gear-two.png"
-                            alt="Gear design two">
+                        <img src="assets/gear-two.png" alt="Gear design two">
 
                         <figcaption>
                             Centered caption below
@@ -562,8 +1926,7 @@
                     <!-- IMAGE WITH CAPTION -->
                     <figure class="card">
 
-                        <img src="assets/gear-two.png"
-                            alt="Gear design two">
+                        <img src="assets/gear-two.png" alt="Gear design two">
 
                         <figcaption>
                             Centered caption below
@@ -575,7 +1938,7 @@
 
             </div>
         </section>
-        <!-- REPEAT THE TOP TWO SECTIONS TO GET STAGGERED COLOR DESIGN -->
+
 
 
     </main>
